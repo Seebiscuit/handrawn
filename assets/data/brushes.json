@@ -1,0 +1,34 @@
+[
+  {
+    "color": "#00FF00",
+    "title": "Bouncy",
+    "desc": "No Friction",
+	"properties": {
+		"staticFriction": 0
+	}
+  },
+    {
+    "color": "#00FF00",
+    "title": "Ice",
+    "desc": "No Friction",
+	"properties": {
+		"staticFriction": 0
+	}
+  },
+    {
+    "color": "green",
+    "title": "Ice",
+    "desc": "No Friction",
+	"properties": {
+		"staticFriction": 0
+	}
+  },
+    {
+    "color": "green",
+    "title": "Ice",
+    "desc": "No Friction",
+	"properties": {
+		"staticFriction": 0
+	}
+  }
+]
