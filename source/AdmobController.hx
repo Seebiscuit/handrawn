@@ -17,11 +17,17 @@ class AdmobController
 	static var data:AdmobData;
 
 	public static function init(){
+		
+		#if !NO_ADS
+		
 		data = Json.parse(Assets.getText("assets/data/secure/admob.json"));
 		
 		// first of all, decide if you want to display testing ads by calling enableTestingAds() method.
 		// Note that if you decide to call enableTestingAds(), you must do that before calling INIT methods.
+		
+		#if debug
 		AdMob.enableTestingAds();
+		#end
 
 		// if your app is for children and you want to enable the COPPA policy,
 		// you need to call tagForChildDirectedTreatment(), before calling INIT.
@@ -39,6 +45,12 @@ class AdmobController
 		//AdMob.initIOS("ca-app-pub-XXXXX123458","ca-app-pub-XXXXX123459", GravityMode.BOTTOM); // may also be GravityMode.TOP
 
 		// NOTE: If your game allows screen rotation, you should call AdMob.onResize(); when rotation happens.
+		
+		#else
+		
+		trace("no ads please");
+		
+		#end
 	
 	}
 	

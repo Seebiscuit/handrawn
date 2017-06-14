@@ -24,15 +24,17 @@
 	<!-- _____________________________ Path Settings ____________________________ -->
 	<set name="BUILD_DIR" value="export" />
 	<classpath name="source" />
+	
+	
 	<assets path="assets" />
 	<assets type="font" path="assets/fonts/fredokaone.ttf" id="default" />
 	<library path="assets/data/library.swf" preload="true" />
 	
+	<!--Assets for Admob, embed for security-->
+	<assets path="assets/data/secure" embed="true" />
+	
 	<!--Assets from photoshop graphics-->
-	<assets path="resources" rename="assets/images" include="*.png|*.jpg" />
-	
-	
-	
+	<assets path="resources/artwork" rename="assets/images" include="*.png|*.jpg" />
 	
 	
 	<!-- _______________________________ Libraries ______________________________ -->
@@ -96,6 +98,8 @@
 		<config:android target-sdk-version="19" />
 		<template path="libs/AndroidManifest.xml" rename="AndroidManifest.xml" />
 		<haxelib name="extension-admob" />
+		<haxelib name="extension-wake-lock" />
+		
 	</section>
 
 	<icon path="assets/images/icon.png" />

@@ -18,6 +18,7 @@ import flixel.input.mouse.FlxMouseEventManager;
 import openfl.Assets;
 import openfl.Lib;
 import openfl.display.Sprite;
+import system.Images;
 
 
 
@@ -30,7 +31,6 @@ class Main extends Sprite {
 	public function new() {
 		super();
 		
-		trace("wtf");
 		
 		
 		#if android
@@ -70,10 +70,13 @@ class Main extends Sprite {
 	 */
 	private function startGame():Void {
 		
+		
+		
 		addChild(new FlxGame(1920, 1080, MenuState, 1, 60, 60, true, false));
 		
 		
 		FlxMouseEventManager.init();
+		Images.init();
 		
 		
 		//Add custom scalemode

@@ -31,8 +31,8 @@ class CircleNapeSprite extends FlxNapeSprite
 		
 		color = FlxG.random.color(FlxColor.WHITE, FlxColor.GRAY);
 		
-		body.surfaceVel.x = 1000;
-		body.disableCCD = true;
+		body.surfaceVel.x = 1;
+		//body.disableCCD = true;
 	}
 	
 }

@@ -1,5 +1,9 @@
 package display;
 
+#if android
+import extension.admob.AdMob;
+#end
+
 import flixel.FlxG;
 import flixel.group.FlxGroup;
 
@@ -28,7 +32,10 @@ class HUD extends FlxGroup {
 		}));
 		add(stickyButton = new HUDToggleButton(150, 0, "assets/images/sticky-btn.png", function(btn:HUDToggleButton) {
 			trace("cool dude");
+			
+			
 			#if android
+			trace("showing banner");
 			AdmobController.showBanner();
 			#end
 		}));

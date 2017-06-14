@@ -13,7 +13,7 @@ import openfl.display.MovieClip;
 class Settings {
 
 
-	public static var material:Material = new Material(0.3, 0.01, 0.01, 0.01, 0.0001);
+	public static var material:Material = new Material(0.3, 0.01, 0.01, 0.0001, 0.0001);
 	public static var space:Space;
 	public static var menu:MovieClip;
 	public static var gravity:Vec2 = Vec2.get(0, 5000);
