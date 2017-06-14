@@ -1,0 +1,89 @@
+{
+	
+	"version": "0.2.0",
+	"configurations": [
+
+		{
+			"name": "Windows: Build and Debug",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"compilePath=${workspaceRoot}",
+				"compileCommand=lime build windows -debug -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
+				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
+				"runCommand=sketchism.exe",
+				"runInTerminal=false"
+			],
+			"type": "hxcpp",
+			"request": "launch",
+			"stopOnEntry": true
+		},
+		{
+			"name": "Windows: Debug",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
+				"runCommand=sketchism.exe",
+				"runInTerminal=false"
+			],
+			"type": "hxcpp",
+			"request": "launch",
+			"program": "",
+			"stopOnEntry": true
+		},
+		{
+			"name": "Windows: Build and Debug clean",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"compilePath=${workspaceRoot}",
+				"compileCommand=lime build windows -clean -debug -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
+				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
+				"runCommand=sketchism.exe",
+				"runInTerminal=false"
+			],
+			"type": "hxcpp",
+			"request": "launch",
+			"stopOnEntry": true
+		},
+		{
+			"name": "Windows: Build and Debug clean VERBOSE",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"compilePath=${workspaceRoot}",
+				"compileCommand=lime build windows -clean -debug -v -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
+				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
+				"runCommand=sketchism.exe",
+				"runInTerminal=false"
+			],
+			"type": "hxcpp",
+			"request": "launch",
+			"stopOnEntry": true
+		},
+		{
+			"name": "Android: Debug",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"runPath=${workspaceRoot}/export/android/bin/bin/",
+				"runCommand=sketchism",
+				"runInTerminal=false"
+			],
+			"type": "hxcpp",
+			"request": "launch",
+			"program": "",
+			"stopOnEntry": false
+		},
+		{
+			"name": "Android: Build and Debug",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"compilePath=${workspaceRoot}",
+				"compileCommand=lime build android -debug -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
+				"runPath=${workspaceRoot}/export/android/bin/bin/",
+				"runCommand=sketchism",
+				"runInTerminal=false"
+			],
+			"type": "hxcpp",
+			"request": "launch",
+			"stopOnEntry": true
+		}
+	]
+}
