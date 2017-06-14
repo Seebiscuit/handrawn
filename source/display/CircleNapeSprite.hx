@@ -13,12 +13,10 @@ import system.Settings;
  * ...
  * @author Jonathan Snyder
  */
-class CircleNapeSprite extends FlxNapeSprite
-{
+class CircleNapeSprite extends FlxNapeSprite {
 
-	public function new(X:Float=0, Y:Float=0) 
-	{
-		super(X, Y, "assets/images/game-play-simple-assets/images/hi-def/rain-circle.png", false,false);
+	public function new(X:Float = 0, Y:Float = 0) {
+		super(X, Y, "assets/images/game-play-simple-assets/images/hi-def/rain-circle.png", false, false);
 		
 		var c:Circle = new Circle(width / 2);
 		addPremadeBody(new Body());
@@ -26,7 +24,7 @@ class CircleNapeSprite extends FlxNapeSprite
 		physicsEnabled = true;
 		
 		//if (Settings.material != null){
-			c.material = Settings.material;
+		c.material = Settings.material;
 		//}
 		
 		color = FlxG.random.color(FlxColor.WHITE, FlxColor.GRAY);

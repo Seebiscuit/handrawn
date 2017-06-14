@@ -21,16 +21,12 @@ import openfl.display.Sprite;
 import system.Images;
 
 
-
-
-
 class Main extends Sprite {
 	var menubg:Bitmap;
 	
 	
 	public function new() {
 		super();
-		
 		
 		
 		#if android
@@ -40,7 +36,6 @@ class Main extends Sprite {
 		#end
 		
 
-		
 		var w:Int = Lib.current.stage.stageWidth;
 		var h:Int = Lib.current.stage.stageHeight;
 
@@ -69,7 +64,6 @@ class Main extends Sprite {
 	 * Starts the game
 	 */
 	private function startGame():Void {
-		
 		
 		
 		addChild(new FlxGame(1920, 1080, MenuState, 1, 60, 60, true, false));

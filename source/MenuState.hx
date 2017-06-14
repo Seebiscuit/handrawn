@@ -136,7 +136,6 @@ class MenuState extends FlxState {
 		#end
 		
 		
-		
 		//TODO: REMOVE THIS SHIT
 		add(new FlxUIButton(FlxG.width / 2, FlxG.height / 2, Images.getPath("settings-icon")));
 	}
@@ -173,14 +172,14 @@ class MenuState extends FlxState {
 		 * ONLY WHEN RAIN BRUSH IS OFF
 		 * When pressed, initiate draw
 		 */
-		if (FlxG.mouse.justPressed && !hud.rainButton.on  && FlxG.mouse.y > 150) {
+		if (FlxG.mouse.justPressed && !hud.rainButton.on && FlxG.mouse.y > 150) {
 			
 			
 			///if there are no bodies under the mouse, then init draw. otherwise init object drag and throw
 			if (FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).filter(function(b:Body) return b.type != BodyType.KINEMATIC).length == 0) {
 				//Settings.togglePhysics();
 				drawing = true;
-			
+
 				
 				FlxG.stage.quality = StageQuality.LOW;
 				FlxG.camera.antialiasing = false;
@@ -207,7 +206,7 @@ class MenuState extends FlxState {
 		/**
 		 * for rain
 		 */
-		if (FlxG.mouse.pressed && hud.rainButton.on && FlxG.mouse.y > 150 ){
+		if (FlxG.mouse.pressed && hud.rainButton.on && FlxG.mouse.y > 150) {
 			add(new CircleNapeSprite(FlxG.mouse.x, FlxG.mouse.y));
 		}
 		

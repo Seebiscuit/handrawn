@@ -28,8 +28,7 @@ class Settings {
 		}
 	}
 	
-	static function set_interationAmount(value:Int):Int 
-	{
+	static function set_interationAmount(value:Int):Int {
 		FlxNapeSpace.velocityIterations = FlxNapeSpace.positionIterations = value;
 		return interationAmount = value;
 	}

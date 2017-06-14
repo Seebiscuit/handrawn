@@ -11,14 +11,12 @@ import nape.phys.BodyType;
 import nape.shape.Circle;
 import system.Settings;
 
-class CannonState extends FlxState
-{
+class CannonState extends FlxState {
 	var circleNapeSprite:FlxNapeSprite;
 	var testCannon:CannonSprite;
 	
 
-	override public function create():Void 
-	{
+	override public function create():Void {
 		super.create();
 		
 		
@@ -32,7 +30,6 @@ class CannonState extends FlxState
 		circleNapeSprite = new FlxNapeSprite(FlxG.width / 2, FlxG.height / 2, "assets/images/ball.png", true, true);
 		
 		
-		
 		testCannon = new CannonSprite();
 		add(testCannon);
 		
@@ -43,7 +40,6 @@ class CannonState extends FlxState
 		add(circleNapeSprite);
 		
 		
-		
 		#if FLX_DEBUG
 		
 		FlxG.console.registerClass(FlxNapeSpace);
@@ -51,25 +47,18 @@ class CannonState extends FlxState
 		#end
 		
 		
-		
-		
 	}
 	
 	
-	override public function update(elapsed:Float):Void 
-	{
+	override public function update(elapsed:Float):Void {
 		super.update(elapsed);
 	}
 	
 	
-	
-	override public function destroy():Void 
-	{
+	override public function destroy():Void {
 		
 		super.destroy();
 	}
 	
-	
-
 	
 }
