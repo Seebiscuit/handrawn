@@ -65,13 +65,13 @@ class Main extends Sprite {
 	 */
 	private function startGame():Void {
 		
-		
+
 		addChild(new FlxGame(1920, 1080, MenuState, 1, 60, 60, true, false));
-		
+		Images.init();
+
 		
 		FlxMouseEventManager.init();
-		Images.init();
-		
+
 		
 		//Add custom scalemode
 		FlxG.scaleMode = new GameScaleMode();

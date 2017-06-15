@@ -96,7 +96,7 @@ class MenuState extends FlxState {
 		FlxNapeSpace.space.gravity.set(Settings.gravity);
 		Settings.space = FlxNapeSpace.space;
 		
-		Settings.interationAmount = 5;
+		Settings.interationAmount = 25;
 		trace(FlxNapeSpace.positionIterations + " - " + FlxNapeSpace.velocityIterations);
 		
 		
