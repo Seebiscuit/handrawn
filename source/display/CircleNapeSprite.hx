@@ -2,9 +2,7 @@ package display;
 
 import flixel.FlxG;
 import flixel.addons.nape.FlxNapeSprite;
-import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.util.FlxColor;
-import nape.callbacks.BodyCallback;
 import nape.phys.Body;
 import nape.shape.Circle;
 import system.Settings;

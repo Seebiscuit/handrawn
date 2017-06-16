@@ -10,7 +10,7 @@
 	<set name="SWF_VERSION" value="11.8" />
 	<!-- ____________________________ Window Settings ___________________________ -->
 	<!--These window settings apply to all targets-->
-	<window width="1152" height="648" fps="60" background="#2C2C2C" hardware="true" vsync="true" antialiasing="0" />
+	<window width="1152" height="648" fps="60" background="#000000" hardware="true" vsync="true" antialiasing="0" />
 	<!--HTML5-specific-->
 	<window if="html5" resizable="false" />
 	<!--Desktop-specific-->
@@ -28,7 +28,7 @@
 	
 	<assets path="assets" />
 	<assets type="font" path="assets/fonts/fredokaone.ttf" id="default" />
-	<library path="assets/data/library.swf" preload="true" />
+	<library path="resources/animations/splash.swf" rename="assets/data/splash.swf" preload="true" />
 	
 	<!--Assets for Admob, embed for security-->
 	<assets path="assets/data/secure" embed="true" />
@@ -38,6 +38,7 @@
 	
 	
 	<!-- _______________________________ Libraries ______________________________ -->
+	<haxelib name="actuate" />
 	<haxelib name="flixel" />
 	<!--In case you want to use the addons package-->
 	<haxelib name="flixel-addons" />

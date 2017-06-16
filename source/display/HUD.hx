@@ -4,8 +4,10 @@ package display;
 import extension.admob.AdMob;
 #end
 
+import flash.display.MovieClip;
 import flixel.FlxG;
 import flixel.group.FlxGroup;
+import openfl.Assets;
 
 /**
  * ...
@@ -42,7 +44,21 @@ class HUD extends FlxGroup {
 		add(refreshButton = new HUDButton(FlxG.width - 300, 0, "assets/images/refresh-btn.png", function(btn:HUDButton) {
 			Main.clearAdded();
 		}));
+		
+		
+		
 		add(menuButton = new HUDButton(FlxG.width - 150, 0, "assets/images/menu-btn.png", function(btn:HUDButton) {
+			
+			var popup:MovieClip = Assets.getMovieClip("splash:settings_modal");
+			popup.scaleX = popup.scaleY = FlxG.camera.totalScaleX;
+			
+			popup.x = (FlxG.stage.stageWidth / 2) - (popup.width / 2);
+			popup.y = (FlxG.stage.stageHeight / 2) - (popup.height / 2);
+			
+			FlxG.stage.addChild(popup);
+			
+			
+			
 			trace("cool dude");
 		}));
 	}

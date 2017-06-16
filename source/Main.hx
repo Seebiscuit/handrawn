@@ -8,27 +8,33 @@ import system.Settings;
 import com.goodidea.util.DataSaver;
 #end
 
-import flash.display.Bitmap;
-import flash.display.PixelSnapping;
+import flash.display.MovieClip;
 import flash.events.MouseEvent;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.addons.nape.FlxNapeSprite;
 import flixel.input.mouse.FlxMouseEventManager;
+import haxe.Timer;
 import openfl.Assets;
 import openfl.Lib;
 import openfl.display.Sprite;
+import openfl.events.Event;
 import system.Images;
 
 
 class Main extends Sprite {
-	var menubg:Bitmap;
+	var splashScreen:MovieClip;
 	
 	
 	public function new() {
 		super();
 		
 		
+		Timer.delay(init, 1000);
+	}
+	
+	
+	function init():Void{
 		#if android
 		
 		AdmobController.init();
@@ -40,15 +46,26 @@ class Main extends Sprite {
 		var h:Int = Lib.current.stage.stageHeight;
 
 		
-		menubg = new Bitmap(Assets.getBitmapData("assets/images/main_menu-assets/images/hi-def/menu-bg.jpg"), PixelSnapping.AUTO, true);
-		addChild(menubg);
-		menubg.width = w;
-		menubg.scaleY = menubg.scaleX;
-		menubg.x = (w / 2) - (menubg.width / 2);
-		menubg.y = (h / 2) - (menubg.height / 2);
+		splashScreen = Assets.getMovieClip("splash:splash_screen");
+		splashScreen.height = h;
+		splashScreen.scaleX = splashScreen.scaleY;
+		splashScreen.x = (w / 2) - (splashScreen.width / 2);
+		addChild(splashScreen);
+		splashScreen.play();
+		
+		splashScreen.addEventListener(Event.ENTER_FRAME, splashScreen_enterFrame);
 
 
-		Lib.current.stage.addEventListener(MouseEvent.CLICK, menubg_click);
+		//Lib.current.stage.addEventListener(MouseEvent.CLICK, menubg_click);
+	}
+	
+	private function splashScreen_enterFrame(e:Event):Void 
+	{
+		if (splashScreen.currentFrame == splashScreen.totalFrames){
+			splashScreen.removeEventListener(Event.ENTER_FRAME, splashScreen_enterFrame);
+			startGame();
+			
+		}
 	}
 	
 	
@@ -78,13 +95,11 @@ class Main extends Sprite {
 
 
 		//remove menubg
-		removeChild(menubg);
-		menubg.bitmapData.dispose();
-		menubg = null;
+		removeChild(splashScreen);
+		splashScreen = null;
 		
 		
 		#if (FLX_DEBUG && windows)
-		
 		FlxG.console.registerClass(Settings);
 		FlxG.console.registerClass(DataSaver);
 		FlxG.console.registerClass(Main);

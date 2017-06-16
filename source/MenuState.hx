@@ -12,7 +12,6 @@ import extension.wakeLock.WakeLock;
 
 import display.AutoNapeSprite;
 import display.CircleNapeSprite;
-import display.FlxUIButton;
 import display.HUD;
 import flash.display.BitmapData;
 import flash.display.Graphics;
@@ -38,7 +37,6 @@ import openfl.display.LineScaleMode;
 import openfl.display.StageQuality;
 import openfl.geom.Point;
 import openfl.geom.Rectangle;
-import system.Images;
 import system.Settings;
 
 class MenuState extends FlxState {
@@ -68,6 +66,9 @@ class MenuState extends FlxState {
 	override public function create():Void {
 		super.create();
 		
+		/**
+		 * Keep screen on if running mobile
+		 */
 		#if android
 		WakeLock.setKeepScreenOn();
 		#end
@@ -137,7 +138,7 @@ class MenuState extends FlxState {
 		
 		
 		//TODO: REMOVE THIS SHIT
-		add(new FlxUIButton(FlxG.width / 2, FlxG.height / 2, Images.getPath("settings-icon")));
+		//add(new FlxUIButton(FlxG.width / 2, FlxG.height / 2, Images.getPath("settings-icon")));
 	}
 
 	override public function update(elapsed:Float):Void {

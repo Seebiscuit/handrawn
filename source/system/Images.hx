@@ -10,7 +10,6 @@ class Images {
 	static private var vals:Array<String>;
 
 	public static function init():Void {
-		trace(Assets.list());
 		vals = Assets.list(AssetType.IMAGE);
 
 
@@ -19,8 +18,8 @@ class Images {
 		FlxG.console.registerClass(Images);
 		#end
 	}
-	
-	
+
+
 	public static function getPath(name:String):String {
 		if(vals == null){
 			vals = Assets.list(AssetType.IMAGE);
