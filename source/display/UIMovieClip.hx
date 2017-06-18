@@ -10,7 +10,7 @@ class UIMovieClip {
 
 	public var mc:MovieClip;
 	
-	public function new(?AssetName:Dynamic) {
+	public function new(?AssetName:Dynamic, LibraryName:String = "library") {
 		
 		
 		/**
@@ -21,7 +21,7 @@ class UIMovieClip {
 			
 			
 			if (Std.is(AssetName, String)) {
-				mc = Assets.getMovieClip('library:${AssetName}');
+				mc = Assets.getMovieClip('${LibraryName}:${AssetName}');
 			} else if (Std.is(AssetName, MovieClip)) {
 				mc = cast AssetName;
 			}

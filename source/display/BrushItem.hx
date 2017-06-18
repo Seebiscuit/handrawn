@@ -3,7 +3,6 @@ import flash.display.MovieClip;
 import flash.text.TextField;
 import flixel.util.FlxColor;
 import openfl.geom.ColorTransform;
-import openfl.text.TextFieldAutoSize;
 
 /**
  * ...
@@ -21,7 +20,9 @@ class BrushItem extends UIMovieClip {
 		
 		var _mc:Dynamic = cast mc;
 		
-		
+		/**
+		 *  i should probably remove this class
+		 */
 		titleTF = cast _mc.title_txt.txt;
 		descTF = cast _mc.desc_txt.txt;
 		icon = cast _mc.icon;

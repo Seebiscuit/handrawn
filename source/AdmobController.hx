@@ -19,7 +19,7 @@ class AdmobController {
 		
 		#if !NO_ADS
 		
-		data = Json.parse(Assets.getText("assets/data/secure/admob.json"));
+		data = Json.parse(Assets.getText("resources/marketing/secure/admob.json"));
 		
 		// first of all, decide if you want to display testing ads by calling enableTestingAds() method.
 		// Note that if you decide to call enableTestingAds(), you must do that before calling INIT methods.

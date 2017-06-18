@@ -30,12 +30,12 @@
   </classpaths>
   <!-- Build options -->
   <build>
-    <option directives="actuate=1.8.7&#xA;flixel=4.2.1&#xA;openfl=3.6.1&#xA;lime=2.9.1&#xA;hscript=2.0.7&#xA;flixel-addons=2.4.1&#xA;nape=2.0.20&#xA;swf=2.3.1&#xA;tjson=1.4.0&#xA;HXCPP_QUIET&#xA;openfl-next&#xA;FLX_NO_FOCUS_LOST_SCREEN&#xA;tools=2.9.1&#xA;FLX_NO_DEBUG&#xA;no-compilation&#xA;NAPE_RELEASE_BUILD&#xA;native&#xA;FLX_NO_TOUCH&#xA;lime-native&#xA;openfl-native&#xA;FLX_NO_SOUND_TRAY&#xA;windows&#xA;desktop&#xA;display" />
+    <option directives="actuate=1.8.7&#xA;flixel=4.2.1&#xA;openfl=3.6.1&#xA;lime=2.9.1&#xA;hscript=2.0.7&#xA;flixel-addons=2.4.1&#xA;nape=2.0.20&#xA;swf=2.3.1&#xA;tjson=1.4.0&#xA;HXCPP_QUIET&#xA;openfl-next&#xA;FLX_NO_FOCUS_LOST_SCREEN&#xA;tools=2.9.1&#xA;no-compilation&#xA;NAPE_RELEASE_BUILD&#xA;native&#xA;FLX_NO_TOUCH&#xA;DRAW_DEBUG&#xA;lime-native&#xA;openfl-native&#xA;FLX_NO_SOUND_TRAY&#xA;windows&#xA;desktop&#xA;display" />
     <option flashStrict="False" />
     <option noInlineOnDebug="False" />
     <option mainClass="ApplicationMain" />
     <option enabledebug="False" />
-    <option additional="--remap flash:openfl&#xA;--macro flixel.system.macros.FlxDefines.run()&#xA;-dce std" />
+    <option additional="--remap flash:openfl&#xA;--macro flixel.system.macros.FlxDefines.run()&#xA;-dce std&#xA;-debug " />
   </build>
   <!-- haxelib libraries -->
   <haxelib>

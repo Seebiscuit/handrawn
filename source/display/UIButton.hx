@@ -27,8 +27,8 @@ class UIButton extends UIMovieClip {
 	
 	var animationTween:NumTween;
 
-	public function new(AssetName:Dynamic, ?onClick:Function, ?onClickParams:Array<Dynamic>) {
-		super(AssetName);
+	public function new(AssetName:Dynamic, ?LibraryName:String, ?onClick:Function, ?onClickParams:Array<Dynamic>) {
+		super(AssetName, LibraryName);
 		
 		OnClick = onClick;
 		OnClickParams = onClickParams;

@@ -10,7 +10,7 @@
 				"compilePath=${workspaceRoot}",
 				"compileCommand=lime build windows -debug -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
 				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
-				"runCommand=sketchism.exe",
+				"runCommand=HanDrawn.exe",
 				"runInTerminal=false"
 			],
 			"type": "hxcpp",
@@ -22,7 +22,7 @@
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
-				"runCommand=sketchism.exe",
+				"runCommand=HanDrawn.exe",
 				"runInTerminal=false"
 			],
 			"type": "hxcpp",
@@ -37,7 +37,7 @@
 				"compilePath=${workspaceRoot}",
 				"compileCommand=lime build windows -clean -debug -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
 				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
-				"runCommand=sketchism.exe",
+				"runCommand=HanDrawn.exe",
 				"runInTerminal=false"
 			],
 			"type": "hxcpp",
@@ -51,7 +51,7 @@
 				"compilePath=${workspaceRoot}",
 				"compileCommand=lime build windows -clean -debug -v -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
 				"runPath=${workspaceRoot}/export/windows/cpp/bin/",
-				"runCommand=sketchism.exe",
+				"runCommand=HanDrawn.exe",
 				"runInTerminal=false"
 			],
 			"type": "hxcpp",
@@ -63,7 +63,7 @@
 			"runtimeExecutable": "${execPath}",
 			"args": [
 				"runPath=${workspaceRoot}/export/android/bin/bin/",
-				"runCommand=sketchism",
+				"runCommand=HanDrawn",
 				"runInTerminal=false"
 			],
 			"type": "hxcpp",
@@ -78,7 +78,7 @@
 				"compilePath=${workspaceRoot}",
 				"compileCommand=lime build android -debug -DHXCPP_DEBUGGER -DUSING_VS_DEBUGGER",
 				"runPath=${workspaceRoot}/export/android/bin/bin/",
-				"runCommand=sketchism",
+				"runCommand=HanDrawn",
 				"runInTerminal=false"
 			],
 			"type": "hxcpp",

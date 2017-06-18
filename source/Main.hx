@@ -28,6 +28,13 @@ class Main extends Sprite {
 	
 	public function new() {
 		super();
+
+		/**
+		 * WORKS!
+		 */
+		#if (debug && cpp && USING_VS_DEBUGGER && !telemetry)
+		new debugger.HaxeRemote(true, "localhost");
+		#end
 		
 		
 		Timer.delay(init, 1000);

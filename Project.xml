@@ -31,7 +31,7 @@
 	<library path="resources/animations/splash.swf" rename="assets/data/splash.swf" preload="true" />
 	
 	<!--Assets for Admob, embed for security-->
-	<assets path="assets/data/secure" embed="true" />
+	<assets path="resources/marketing/secure" embed="true" />
 	
 	<!--Assets from photoshop graphics-->
 	<assets path="resources/artwork" rename="assets/images" include="*.png|*.jpg" />

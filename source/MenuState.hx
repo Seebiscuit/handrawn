@@ -177,7 +177,7 @@ class MenuState extends FlxState {
 			
 			
 			///if there are no bodies under the mouse, then init draw. otherwise init object drag and throw
-			if (FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).filter(function(b:Body) return b.type != BodyType.KINEMATIC).length == 0) {
+			if (FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).filter(function(b:Body) return b.type != BodyType.STATIC).length == 0) {
 				//Settings.togglePhysics();
 				drawing = true;
 
