@@ -67,15 +67,29 @@ class HUD extends FlxGroup {
 
 			var closeButton:DisplayObject = popup.getChildByName("close_btn");
 			closeButton.addEventListener(MouseEvent.CLICK, closeButton_click);
+			
+			var p:Dynamic = cast popup;
+			var musicSlider:SliderButton = new SliderButton(p.togglers.music.slider, function(b:SliderButton){
+				trace("cool " + b.on);
+			}, "yes", "no");
+
+			var sfxSlider:SliderButton = new SliderButton(p.togglers.sfx.slider, function(b:SliderButton){
+				trace("sfx: " + b.on);
+			});
+			
+			var qualitySlider:SliderButton = new SliderButton(p.togglers.quality.slider, function(b:SliderButton){
+				trace("quality: " + b.on);
+			});
+			
 
 			
-		
+			FlxG.state.active = false;
 			
 			FlxG.stage.addChild(popup);
 
 
 			#if FLX_DEBUG
-				//FlxG.console.registerObject("txt", txt);
+				FlxG.console.registerObject("quality", qualitySlider);
 			#end
 			
 			
@@ -88,6 +102,7 @@ class HUD extends FlxGroup {
 	private function closeButton_click(e:MouseEvent):Void 
 	{
 		trace(e);
+		FlxG.state.active = true;
 		popup.parent.removeChild(popup);
 		popup.removeChildren();
 		popup = null;
