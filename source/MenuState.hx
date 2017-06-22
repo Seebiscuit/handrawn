@@ -102,8 +102,8 @@ class MenuState extends FlxState {
 		Settings.interationAmount = 25;
 		trace(FlxNapeSpace.positionIterations + " - " + FlxNapeSpace.velocityIterations);
 		
-		
-		add(new DragThrowController(FlxNapeSpace.space, null, false));
+		var dragThrowController = new DragThrowController(FlxNapeSpace.space, null, false);
+		add(dragThrowController);
 		
 		add(drawSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.TRANSPARENT));
 		
@@ -130,7 +130,7 @@ class MenuState extends FlxState {
 		FlxG.console.autoPause = false;
 		
 		FlxG.console.registerClass(NapeUtil);
-		
+		FlxG.console.registerObject('controller', dragThrowController);
 		
 		FlxG.watch.add(this, 'granularity', 'granular');
 		FlxG.console.registerObject("cam", camera);

@@ -116,6 +116,7 @@ class Main extends Sprite {
 	private function startGame():Void {
 
 		
+		
 
 		addChild(new FlxGame(1920, 1080, MenuState, 1, 60, 60, true, false));
 		Images.init();
@@ -151,5 +152,10 @@ class Main extends Sprite {
 
 	public static function clearAdded():Void {
 		FlxG.state.forEachOfType(FlxNapeSprite, function(s:FlxNapeSprite) s.destroy());
+	}
+	
+	private function getDeviceSize()
+	{
+		
 	}
 }
