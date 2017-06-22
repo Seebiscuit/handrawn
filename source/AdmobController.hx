@@ -7,6 +7,8 @@ import extension.admob.GravityMode;
 import haxe.Json;
 import openfl.Assets;
 
+using StringTools;
+
 /**
  * ...
  * @author Jonathan Snyder
@@ -27,6 +29,7 @@ class AdmobController {
 		#if debug
 		AdMob.enableTestingAds();
 		#end
+		
 
 		// if your app is for children and you want to enable the COPPA policy,
 		// you need to call tagForChildDirectedTreatment(), before calling INIT.

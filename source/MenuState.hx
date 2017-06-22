@@ -38,7 +38,7 @@ import openfl.display.StageQuality;
 import openfl.geom.Point;
 import openfl.geom.Rectangle;
 import system.Settings;
-import system.Sounds;
+import system.Audio;
 
 class MenuState extends FlxState {
 	
@@ -176,9 +176,9 @@ class MenuState extends FlxState {
 		 * When pressed, initiate draw
 		 */
 		if (FlxG.mouse.justPressed && !hud.rainButton.on && FlxG.mouse.y > 150) {
-			Sounds.draw.looped = true;
-			Sounds.draw.volume = 0;
-			Sounds.draw.play(true);
+			Audio.draw.looped = true;
+			Audio.draw.volume = 0;
+			Audio.draw.play(true);
 			
 			///if there are no bodies under the mouse, then init draw. otherwise init object drag and throw
 			if (FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).filter(function(b:Body) return b.type != BodyType.STATIC).length == 0) {
@@ -212,9 +212,9 @@ class MenuState extends FlxState {
 		 * for rain
 		 */
 		if (FlxG.mouse.pressed && hud.rainButton.on && FlxG.mouse.y > 150) {
-			if (!Sounds.blip.playing){
-				Sounds.blip.looped = true;
-				Sounds.blip.play(true);
+			if (!Audio.blip.playing){
+				Audio.blip.looped = true;
+				Audio.blip.play(true);
 			}
 			
 			add(new CircleNapeSprite(FlxG.mouse.x, FlxG.mouse.y));
@@ -224,7 +224,7 @@ class MenuState extends FlxState {
 		 * When rain is done
 		 */
 		if (FlxG.mouse.justReleased && hud.rainButton.on){
-			Sounds.blip.stop();
+			Audio.blip.stop();
 		}
 		
 		
@@ -244,7 +244,7 @@ class MenuState extends FlxState {
 		 * Distance between to use for controlling draw sound volume
 		 */
 		var distance:Float = Vec2.distance(Vec2.weak(mousePos.x, mousePos.y), Vec2.weak(drawSpr.mouseX, drawSpr.mouseY));
-		Sounds.draw.volume = FlxMath.bound(distance / (drawSpr.width / 2), 0, 1);
+		Audio.draw.volume = FlxMath.bound(distance / (drawSpr.width / 2), 0, 1);
 		
 		FlxSpriteUtil.updateSpriteGraphic(drawSprite, {
 			smoothing: false
@@ -265,7 +265,7 @@ class MenuState extends FlxState {
 		Lib.current.stage.removeEventListener(MouseEvent.MOUSE_UP, stage_mouseUp);
 		drawing = false;
 		
-		Sounds.draw.stop();
+		Audio.draw.stop();
 
 		FlxG.stage.quality = StageQuality.BEST;
 		FlxG.camera.antialiasing = true;
@@ -305,7 +305,7 @@ class MenuState extends FlxState {
 		add(spr);
 	}
 	
-	public function clearAdded():Void {
+	public inline function clearAdded():Void {
 		forEachOfType(AutoNapeSprite, function(s:AutoNapeSprite) s.destroy());
 	}
 	
@@ -326,6 +326,4 @@ class MenuState extends FlxState {
 		drawSpr.scaleY = FlxG.scaleMode.scale.y;
 		
 	}
-
-	
 }

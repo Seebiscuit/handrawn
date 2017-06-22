@@ -12,6 +12,7 @@ import flash.display.MovieClip;
 import flash.events.MouseEvent;
 import flixel.FlxG;
 import flixel.FlxGame;
+import flixel.FlxState;
 import flixel.addons.nape.FlxNapeSprite;
 import flixel.input.mouse.FlxMouseEventManager;
 import haxe.Timer;
@@ -20,7 +21,7 @@ import openfl.Lib;
 import openfl.display.Sprite;
 import openfl.events.Event;
 import system.Images;
-import system.Sounds;
+import system.Audio;
 
 
 class Main extends Sprite {
@@ -62,7 +63,32 @@ class Main extends Sprite {
 		splashScreen.play();
 		
 		splashScreen.addEventListener(Event.ENTER_FRAME, splashScreen_enterFrame);
+		
+		
+		
+		FlxG.signals.gameStarted.addOnce(function(){
+			trace("game started");
+		});
 
+		FlxG.signals.postDraw.addOnce(function(){
+			trace("post draw");
+		});
+
+		FlxG.signals.postUpdate.addOnce(function(){
+			trace("post update");
+		});
+
+		FlxG.signals.preDraw.addOnce(function(){
+			trace("predraw");
+		});
+
+		FlxG.signals.preUpdate.addOnce(function(){
+			trace("preupdate");
+		});
+
+		FlxG.signals.preStateCreate.addOnce(function(s:FlxState){
+			trace("state create pre");
+		});
 
 		//Lib.current.stage.addEventListener(MouseEvent.CLICK, menubg_click);
 	}
@@ -93,7 +119,7 @@ class Main extends Sprite {
 
 		addChild(new FlxGame(1920, 1080, MenuState, 1, 60, 60, true, false));
 		Images.init();
-		Sounds.init();
+		Audio.init();
 		
 		
 		//Start Music

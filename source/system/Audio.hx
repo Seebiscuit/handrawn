@@ -6,7 +6,7 @@ import flixel.system.FlxSound;
  * ...
  * @author Jonathan Snyder
  */
-class Sounds
+class Audio
 {
 	
 	
