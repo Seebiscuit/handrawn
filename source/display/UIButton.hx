@@ -3,9 +3,6 @@ import haxe.Constraints.Function;
 import openfl.events.MouseEvent;
 
 
-
-
-
 /**
  * ...
  * @author Jonathan Snyder
@@ -17,16 +14,11 @@ class UIButton extends UIMovieClip {
 	public var OnClickParams:Array<Dynamic>;
 	
 	
-
-
 	public function new(AssetName:Dynamic, ?LibraryName:String, ?onClick:Function, ?onClickParams:Array<Dynamic>) {
 		super(AssetName, LibraryName);
 		
 		OnClick = onClick;
 		OnClickParams = onClickParams;
-		
-		
-		
 		
 		
 		addListeners();
@@ -83,8 +75,6 @@ class UIButton extends UIMovieClip {
 			Reflect.callMethod(this, OnClick, OnClickParams);
 		}
 	}
-	
-	
 	
 	
 }

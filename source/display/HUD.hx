@@ -1,10 +1,12 @@
 package display;
 
 import flash.display.DisplayObject;
+import flash.display.StageQuality;
 import flash.events.MouseEvent;
 #if android
 import extension.admob.AdMob;
 #end
+import flash.text.TextField;
 
 import flash.display.MovieClip;
 import flixel.FlxG;
@@ -57,10 +59,16 @@ class HUD extends FlxGroup {
 		add(menuButton = new HUDButton(FlxG.width - 150, 0, "assets/images/menu-btn.png", function(btn:HUDButton) {
 			
 			popup = Assets.getMovieClip("splash:settings_modal");
-			popup.scaleX = popup.scaleY = FlxG.camera.totalScaleX;
+			popup.height = FlxG.stage.stageHeight;
+			popup.scaleX = popup.scaleY;
+			//popup.scaleX = popup.scaleY = FlxG.camera.totalScaleX;
 			
 			popup.x = (FlxG.stage.stageWidth / 2);
 			popup.y = (FlxG.stage.stageHeight / 2);
+			
+			
+			
+			
 
 
 			//var sfx:Dynamic = cast popup.getChildByName("sfx");
@@ -69,18 +77,26 @@ class HUD extends FlxGroup {
 			closeButton.addEventListener(MouseEvent.CLICK, closeButton_click);
 			
 			var p:Dynamic = cast popup;
-			var musicSlider:SliderButton = new SliderButton(p.togglers.music.slider, function(b:SliderButton){
+			
+			var tfTest:TextField = cast p.togglers.music.txt;
+//			tfTest.text = "Hey Guys!";
+			
+			var musicSlider:SliderButton = new SliderButton(p.togglers.music.slider, function(b:SliderButton) {
 				trace("cool " + b.on);
 			}, "yes", "no");
 
-			var sfxSlider:SliderButton = new SliderButton(p.togglers.sfx.slider, function(b:SliderButton){
+			var sfxSlider:SliderButton = new SliderButton(p.togglers.sfx.slider, function(b:SliderButton) {
 				trace("sfx: " + b.on);
-			});
+			}, "yes", "no");
 			
-			var qualitySlider:SliderButton = new SliderButton(p.togglers.quality.slider, function(b:SliderButton){
+			var qualitySlider:SliderButton = new SliderButton(p.togglers.quality.slider, function(b:SliderButton) {
 				trace("quality: " + b.on);
-			});
+				FlxG.stage.quality = b.on ? StageQuality.HIGH : StageQuality.LOW;
+				FlxG.camera.antialiasing = b.on;
+			}, "high", "low");
 			
+			var adButton:MovieClip = cast p.remove_ad_btn;
+			adButton.addEventListener(MouseEvent.CLICK, adButton_click);
 
 			
 			FlxG.state.active = false;
@@ -89,18 +105,20 @@ class HUD extends FlxGroup {
 
 
 			#if FLX_DEBUG
-				FlxG.console.registerObject("quality", qualitySlider);
+			FlxG.console.registerObject("quality", qualitySlider);
 			#end
-			
 			
 			
 			trace("cool dude");
 		}));
 	}
 	
+	private function adButton_click(e:MouseEvent):Void {
+		FlxG.openURL("http://www.google.com");
+	}
+	
 	@:access(flash.events.MouseEvent)
-	private function closeButton_click(e:MouseEvent):Void 
-	{
+	private function closeButton_click(e:MouseEvent):Void {
 		trace(e);
 		FlxG.state.active = true;
 		popup.parent.removeChild(popup);

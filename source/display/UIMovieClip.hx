@@ -53,7 +53,7 @@ class UIMovieClip {
 
 		}
 
-		if(mc == null){
+		if (mc == null) {
 			throw new Error("You must have a movieclip reference");
 		}
 
@@ -120,7 +120,7 @@ class UIMovieClip {
 	}
 	
 	
-	public function stopAtLabel(label:String){
+	public function stopAtLabel(label:String) {
 		mc.play();
 		currentFrame = getLabelByString(label).stop;
 		
@@ -136,13 +136,11 @@ class UIMovieClip {
 		return l[0];
 	}
 	
-	function get_currentFrame():Int 
-	{
+	function get_currentFrame():Int {
 		return mc.currentFrame;
 	}
 	
-	function set_currentFrame(value:Int):Int 
-	{
+	function set_currentFrame(value:Int):Int {
 		mc.gotoAndStop(value);
 		return mc.currentFrame;
 	}

@@ -41,7 +41,7 @@ class Main extends Sprite {
 	}
 	
 	
-	function init():Void{
+	function init():Void {
 		#if android
 		
 		AdmobController.init();
@@ -66,9 +66,8 @@ class Main extends Sprite {
 		//Lib.current.stage.addEventListener(MouseEvent.CLICK, menubg_click);
 	}
 	
-	private function splashScreen_enterFrame(e:Event):Void 
-	{
-		if (splashScreen.currentFrame == splashScreen.totalFrames){
+	private function splashScreen_enterFrame(e:Event):Void {
+		if (splashScreen.currentFrame == splashScreen.totalFrames) {
 			splashScreen.removeEventListener(Event.ENTER_FRAME, splashScreen_enterFrame);
 			startGame();
 			

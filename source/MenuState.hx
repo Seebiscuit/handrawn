@@ -7,7 +7,6 @@ import flixel.system.debug.FlxDebugger.FlxDebuggerLayout;
 
 #if android
 import extension.wakeLock.WakeLock;
-
 #end
 
 import display.AutoNapeSprite;
@@ -25,7 +24,7 @@ import flixel.addons.nape.FlxNapeSpace;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxSpriteUtil;
-import helpers.DragThrowController;
+import com.goodidea.util.helpers.DragThrowController;
 import nape.geom.Vec2;
 import nape.phys.Body;
 import nape.phys.BodyType;
@@ -68,6 +67,7 @@ class MenuState extends FlxState {
 		
 		/**
 		 * Keep screen on if running mobile
+		 * TODO: Doesn't seem to be working anymore
 		 */
 		#if android
 		WakeLock.setKeepScreenOn();

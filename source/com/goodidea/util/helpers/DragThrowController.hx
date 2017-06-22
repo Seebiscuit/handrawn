@@ -86,14 +86,4 @@ class DragThrowController extends FlxBasic {
 		bodyList.clear();
 		space.bodiesUnderPoint(mp, filter, bodyList);
 	}
-
-	
-	/**
-	 * TODO: REMOVE
-	 * @return
-	 */
-	public function filteredBodiesUnderMouse():BodyList {
-		mp.set(mousePos);
-		return space.bodiesUnderPoint(mp, filter);
-	}
 }

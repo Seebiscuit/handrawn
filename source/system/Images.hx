@@ -21,13 +21,12 @@ class Images {
 
 
 	public static function getPath(name:String):String {
-		if(vals == null){
+		if (vals == null) {
 			vals = Assets.list(AssetType.IMAGE);
 		}
 
 
 		var v:String = null;
-		
 		
 		
 		var matched:Array<String> = vals.filter(function(s:String) {

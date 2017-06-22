@@ -2,9 +2,11 @@ package display;
 
 import flixel.FlxSprite;
 import flixel.input.mouse.FlxMouseEventManager;
+import flixel.math.FlxAngle;
 import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import system.Settings;
 
 /**
  * ...
@@ -68,6 +70,18 @@ class HUDButton extends FlxSprite {
 		FlxTween.num(1.5, 1, .3, ops, function(f:Float) {
 			this.scale.x = this.scale.y = f;
 		});
+	}
+	
+	
+	override public function update(elapsed:Float):Void 
+	{
+		
+		if (Settings.space != null){
+			angle += (((Settings.space.gravity.angle * FlxAngle.TO_DEG)-90) - angle) / 8;
+		}
+		
+		
+		super.update(elapsed);
 	}
 	
 	

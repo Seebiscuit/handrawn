@@ -9,15 +9,14 @@ import openfl.events.MouseEvent;
  * ...
  * @author Jonathan Snyder
  */
-class SliderButton extends UIMovieClip
-{
+class SliderButton extends UIMovieClip {
 
-	public var onClick:SliderButton->Void;
+	public var onClick:SliderButton -> Void;
 	
 	public var on(default, set):Bool;
 
 
-	public function new(mc:Dynamic, ?OnClick:SliderButton->Void, on:String = "on", off:String = "off") {
+	public function new(mc:Dynamic, ?OnClick:SliderButton -> Void, on:String = "on", off:String = "off") {
 		super(mc, "splash");
 		
 		onClick = OnClick;
@@ -50,7 +49,6 @@ class SliderButton extends UIMovieClip
 	}
 	
 	
-	
 	private function mc_click(e:MouseEvent):Void {
 		trace("click");
 		
@@ -62,11 +60,10 @@ class SliderButton extends UIMovieClip
 		}
 	}
 	
-	function set_on(value:Bool):Bool 
-	{
-		if (value){
+	function set_on(value:Bool):Bool {
+		if (value) {
 			playLabel("on");
-		}else{
+		} else {
 			playLabel("off");
 		}
 		
