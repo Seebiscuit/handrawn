@@ -21,6 +21,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.addons.nape.FlxNapeSpace;
+import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxSpriteUtil;
@@ -37,6 +38,7 @@ import openfl.display.StageQuality;
 import openfl.geom.Point;
 import openfl.geom.Rectangle;
 import system.Settings;
+import system.Sounds;
 
 class MenuState extends FlxState {
 	
@@ -174,7 +176,9 @@ class MenuState extends FlxState {
 		 * When pressed, initiate draw
 		 */
 		if (FlxG.mouse.justPressed && !hud.rainButton.on && FlxG.mouse.y > 150) {
-			
+			Sounds.draw.looped = true;
+			Sounds.draw.volume = 0;
+			Sounds.draw.play(true);
 			
 			///if there are no bodies under the mouse, then init draw. otherwise init object drag and throw
 			if (FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).filter(function(b:Body) return b.type != BodyType.STATIC).length == 0) {
@@ -208,7 +212,19 @@ class MenuState extends FlxState {
 		 * for rain
 		 */
 		if (FlxG.mouse.pressed && hud.rainButton.on && FlxG.mouse.y > 150) {
+			if (!Sounds.blip.playing){
+				Sounds.blip.looped = true;
+				Sounds.blip.play(true);
+			}
+			
 			add(new CircleNapeSprite(FlxG.mouse.x, FlxG.mouse.y));
+		}
+		
+		/**
+		 * When rain is done
+		 */
+		if (FlxG.mouse.justReleased && hud.rainButton.on){
+			Sounds.blip.stop();
 		}
 		
 		
@@ -222,6 +238,13 @@ class MenuState extends FlxState {
 	private function stage_mouseMove(e:MouseEvent):Void {
 		g.lineTo(mousePos.x, mousePos.y);
 		g.moveTo(mousePos.x, mousePos.y);
+		
+		
+		/**
+		 * Distance between to use for controlling draw sound volume
+		 */
+		var distance:Float = Vec2.distance(Vec2.weak(mousePos.x, mousePos.y), Vec2.weak(drawSpr.mouseX, drawSpr.mouseY));
+		Sounds.draw.volume = FlxMath.bound(distance / (drawSpr.width / 2), 0, 1);
 		
 		FlxSpriteUtil.updateSpriteGraphic(drawSprite, {
 			smoothing: false
@@ -241,6 +264,8 @@ class MenuState extends FlxState {
 		Lib.current.stage.removeEventListener(MouseEvent.MOUSE_MOVE, stage_mouseMove);
 		Lib.current.stage.removeEventListener(MouseEvent.MOUSE_UP, stage_mouseUp);
 		drawing = false;
+		
+		Sounds.draw.stop();
 
 		FlxG.stage.quality = StageQuality.BEST;
 		FlxG.camera.antialiasing = true;

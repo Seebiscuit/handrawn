@@ -36,8 +36,6 @@ class HUD extends FlxGroup {
 		}));
 		add(stickyButton = new HUDToggleButton(150, 0, "assets/images/sticky-btn.png", function(btn:HUDToggleButton) {
 			trace("cool dude");
-			
-			
 			#if android
 			trace("showing banner");
 			AdmobController.showBanner();
@@ -83,10 +81,12 @@ class HUD extends FlxGroup {
 			
 			var musicSlider:SliderButton = new SliderButton(p.togglers.music.slider, function(b:SliderButton) {
 				trace("cool " + b.on);
+				FlxG.sound.music.volume = b.on ? 1 : 0;
 			}, "yes", "no");
 
 			var sfxSlider:SliderButton = new SliderButton(p.togglers.sfx.slider, function(b:SliderButton) {
 				trace("sfx: " + b.on);
+				FlxG.sound.volume = b.on ? 1 : 0;
 			}, "yes", "no");
 			
 			var qualitySlider:SliderButton = new SliderButton(p.togglers.quality.slider, function(b:SliderButton) {

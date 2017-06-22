@@ -20,6 +20,7 @@ import openfl.Lib;
 import openfl.display.Sprite;
 import openfl.events.Event;
 import system.Images;
+import system.Sounds;
 
 
 class Main extends Sprite {
@@ -87,10 +88,17 @@ class Main extends Sprite {
 	 * Starts the game
 	 */
 	private function startGame():Void {
+
 		
 
 		addChild(new FlxGame(1920, 1080, MenuState, 1, 60, 60, true, false));
 		Images.init();
+		Sounds.init();
+		
+		
+		//Start Music
+		FlxG.sound.playMusic("assets/music/track1.ogg");
+
 
 		
 		FlxMouseEventManager.init();
