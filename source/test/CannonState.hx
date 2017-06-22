@@ -1,6 +1,6 @@
-package;
+package test;
 
-import display.CannonSprite;
+import test.CannonSprite;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.addons.nape.FlxNapeSpace;
@@ -11,7 +11,7 @@ import nape.phys.BodyType;
 import nape.shape.Circle;
 import system.Settings;
 
-class CannonState extends FlxState {
+class test.CannonState extends FlxState {
 	var circleNapeSprite:FlxNapeSprite;
 	var testCannon:CannonSprite;
 	
