@@ -65,10 +65,6 @@ class HUD extends FlxGroup {
 			popup.y = (FlxG.stage.stageHeight / 2);
 			
 			
-			
-			
-
-
 			//var sfx:Dynamic = cast popup.getChildByName("sfx");
 
 			var closeButton:DisplayObject = popup.getChildByName("close_btn");

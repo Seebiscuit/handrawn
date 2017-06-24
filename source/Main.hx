@@ -8,6 +8,7 @@ import system.Settings;
 import com.goodidea.util.DataSaver;
 #end
 
+import display.UIMovieClip;
 import flash.display.MovieClip;
 import flash.events.MouseEvent;
 import flixel.FlxG;
@@ -26,7 +27,7 @@ import system.Audio;
 
 class Main extends Sprite {
 	var splashScreen:MovieClip;
-	
+	var mainMenu:UIMovieClip;
 	
 	public function new() {
 		super();
@@ -61,32 +62,30 @@ class Main extends Sprite {
 		splashScreen.x = (w / 2) - (splashScreen.width / 2);
 		addChild(splashScreen);
 		splashScreen.play();
-		
 		splashScreen.addEventListener(Event.ENTER_FRAME, splashScreen_enterFrame);
 		
 		
-		
-		FlxG.signals.gameStarted.addOnce(function(){
+		FlxG.signals.gameStarted.addOnce(function() {
 			trace("game started");
 		});
 
-		FlxG.signals.postDraw.addOnce(function(){
+		FlxG.signals.postDraw.addOnce(function() {
 			trace("post draw");
 		});
 
-		FlxG.signals.postUpdate.addOnce(function(){
+		FlxG.signals.postUpdate.addOnce(function() {
 			trace("post update");
 		});
 
-		FlxG.signals.preDraw.addOnce(function(){
+		FlxG.signals.preDraw.addOnce(function() {
 			trace("predraw");
 		});
 
-		FlxG.signals.preUpdate.addOnce(function(){
+		FlxG.signals.preUpdate.addOnce(function() {
 			trace("preupdate");
 		});
 
-		FlxG.signals.preStateCreate.addOnce(function(s:FlxState){
+		FlxG.signals.preStateCreate.addOnce(function(s:FlxState) {
 			trace("state create pre");
 		});
 
@@ -95,17 +94,35 @@ class Main extends Sprite {
 	
 	private function splashScreen_enterFrame(e:Event):Void {
 		if (splashScreen.currentFrame == splashScreen.totalFrames) {
+			splashScreen.stop();
 			splashScreen.removeEventListener(Event.ENTER_FRAME, splashScreen_enterFrame);
-			startGame();
-			
+			//startGame();
+			showMenu();
 		}
 	}
 	
+	function showMenu() {
+		mainMenu = new UIMovieClip("main_menu", "splash");
+		mainMenu.mc.height = Lib.current.stage.stageHeight;
+		mainMenu.mc.scaleX = mainMenu.mc.scaleY;
+		mainMenu.currentFrame = 2;
+		removeChild(splashScreen);
+		addChild(mainMenu.mc);
+		mainMenu.playFromTo(1, mainMenu.mc.totalFrames, function(ui) {
+			trace("played it");
+			mainMenu.playFromTo(mainMenu.mc.currentFrame, 1, function(ui) {
+				removeChild(mainMenu.mc);
+				startGame();
+			});
+		});
+		
+		
+		var playButton:MovieClip = cast mainMenu.dynamicMC.buttons.play_btn;
+		playButton.addEventListener(MouseEvent.CLICK, playButton_click);
+	}
 	
-	//Click to start game
-	private function menubg_click(e:MouseEvent):Void {
-		Lib.current.stage.removeEventListener(MouseEvent.CLICK, menubg_click);
-		trace("ok start game");
+	private function playButton_click(e:MouseEvent):Void {
+		trace("play game");
 		startGame();
 	}
 	
@@ -115,8 +132,6 @@ class Main extends Sprite {
 	 */
 	private function startGame():Void {
 
-		
-		
 
 		addChild(new FlxGame(1920, 1080, MenuState, 1, 60, 60, true, false));
 		Images.init();
@@ -125,7 +140,6 @@ class Main extends Sprite {
 		
 		//Start Music
 		FlxG.sound.playMusic("assets/music/track1.ogg");
-
 
 		
 		FlxMouseEventManager.init();
@@ -152,10 +166,5 @@ class Main extends Sprite {
 
 	public static function clearAdded():Void {
 		FlxG.state.forEachOfType(FlxNapeSprite, function(s:FlxNapeSprite) s.destroy());
-	}
-	
-	private function getDeviceSize()
-	{
-		
 	}
 }

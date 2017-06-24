@@ -1,8 +1,10 @@
 package display;
+import flash.display.FrameLabel;
 import flixel.FlxG;
 import motion.Actuate;
 import motion.easing.Linear;
 import openfl.Assets;
+import openfl.Lib;
 import openfl.display.MovieClip;
 import openfl.errors.Error;
 
@@ -105,11 +107,10 @@ class UIMovieClip {
 			if (animationTween != null) {
 				animationTween.cancel();
 			}
-			
+
 			//duration from start to end
 			var duration:Float = (label.stop - label.start) / FlxG.updateFramerate;
-			
-			
+
 			currentFrame = label.start;
 			trace(label.start + " - " + label.stop);
 			Actuate.stop(this);
@@ -123,7 +124,6 @@ class UIMovieClip {
 	public function stopAtLabel(label:String) {
 		mc.play();
 		currentFrame = getLabelByString(label).stop;
-		
 	}
 	
 	
@@ -135,6 +135,35 @@ class UIMovieClip {
 		
 		return l[0];
 	}
+	
+	
+	/**
+	 * Play movieclip from start to finish.
+	 * Autostop, with onComplete options
+	 * @param	start Frame number or label string to start
+	 * @param	end  Frame number or label string to stop
+	 */
+	public function playFromTo(start:Dynamic, end:Dynamic, ?OnComplete:UIMovieClip -> Void):Void {
+		var index1:Int = Std.is(start, Int) ? cast start : mc.currentLabels.filter(function(f) {
+			return f.name == Std.string(start);
+		})[0].frame;
+		
+		var index2:Int = Std.is(end, Int) ? cast end : mc.currentLabels.filter(function(f) {
+			return f.name == Std.string(end);
+		})[0].frame;
+		
+		//duration from start to end
+		var duration:Float = Math.abs(index2 - index1) / Lib.current.stage.frameRate;
+
+		
+		//Actuate.stop(this);
+		currentFrame = index1;
+		Actuate.tween(this, duration, {currentFrame: index2}, true)
+		.onComplete(OnComplete, [this])
+		.ease(Linear.easeNone);
+		
+	}
+	
 	
 	function get_currentFrame():Int {
 		return mc.currentFrame;

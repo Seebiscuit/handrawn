@@ -83,19 +83,17 @@ class HUDButton extends FlxSprite {
 	}
 	
 	
-	override public function update(elapsed:Float):Void 
-	{
+	override public function update(elapsed:Float):Void {
 		
-		if (Settings.space != null){
-			angle += (((Settings.space.gravity.angle * FlxAngle.TO_DEG)-90) - angle) / 8;
+		if (Settings.space != null) {
+			angle += (((Settings.space.gravity.angle * FlxAngle.TO_DEG) - 90) - angle) / 8;
 		}
 		
 		
 		super.update(elapsed);
 	}
 	
-	function addButtonBody(X:Float, Y:Float) 
-	{
+	function addButtonBody(X:Float, Y:Float) {
 		var pos = size / 2;
 		body = new Body(BodyType.KINEMATIC);
 		body.shapes.add(new Polygon(Polygon.box(size, size)));

@@ -61,6 +61,7 @@ class MenuState extends FlxState {
 	var g:Graphics;
 	var fps:openfl.display.FPS;
 	var drawSpr:Sprite;
+	var dragThrowController:com.goodidea.util.helpers.DragThrowController;
 	public var drawSprite:FlxSprite;
 	
 	
@@ -102,7 +103,7 @@ class MenuState extends FlxState {
 		Settings.interationAmount = 25;
 		trace(FlxNapeSpace.positionIterations + " - " + FlxNapeSpace.velocityIterations);
 		
-		var dragThrowController = new DragThrowController(FlxNapeSpace.space, null, false);
+		dragThrowController = new DragThrowController(FlxNapeSpace.space, null, false);
 		add(dragThrowController);
 		
 		add(drawSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.TRANSPARENT));
@@ -175,7 +176,7 @@ class MenuState extends FlxState {
 		 * ONLY WHEN RAIN BRUSH IS OFF
 		 * When pressed, initiate draw
 		 */
-		if (FlxG.mouse.justPressed && !hud.rainButton.on && FlxG.mouse.y > 150) {
+		if (FlxG.mouse.justPressed && !hud.rainButton.on) {
 			Audio.draw.looped = true;
 			Audio.draw.volume = 0;
 			Audio.draw.play(true);
@@ -209,10 +210,11 @@ class MenuState extends FlxState {
 		
 		
 		/**
+		 *  TODO: Add conditional for if drag thrower hand is active
 		 * for rain
 		 */
-		if (FlxG.mouse.pressed && hud.rainButton.on && FlxG.mouse.y > 150) {
-			if (!Audio.blip.playing){
+		if (FlxG.mouse.pressed && hud.rainButton.on && !dragThrowController.hand.active) {
+			if (!Audio.blip.playing) {
 				Audio.blip.looped = true;
 				Audio.blip.play(true);
 			}
@@ -223,7 +225,7 @@ class MenuState extends FlxState {
 		/**
 		 * When rain is done
 		 */
-		if (FlxG.mouse.justReleased && hud.rainButton.on){
+		if (FlxG.mouse.justReleased && hud.rainButton.on) {
 			Audio.blip.stop();
 		}
 		
