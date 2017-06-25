@@ -46,6 +46,8 @@ class AutoNapeSprite extends FlxNapeSprite {
 		if (body != null) {
 			body.space = null;
 		}
+
+		body = null;
 	}
 	
 	override public function destroy():Void {

@@ -72,7 +72,7 @@ class HUD extends FlxGroup {
 			closeButton.addEventListener(MouseEvent.CLICK, closeButton_click);
 			
 			var p:Dynamic = cast popup;
-						
+
 			var musicSlider:SliderButton = new SliderButton(p.togglers.music.slider, function(b:SliderButton) {
 				trace("cool " + b.on);
 				FlxG.sound.defaultMusicGroup.volume = b.on ? 1 : 0;

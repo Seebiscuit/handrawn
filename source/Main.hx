@@ -66,7 +66,6 @@ class Main extends Sprite {
 
 		/**
 		 * Keep screen on if running mobile
-		 * TODO: Doesn't seem to be working anymore
 		 */
 		WakeLock.setKeepScreenOn();
 	}

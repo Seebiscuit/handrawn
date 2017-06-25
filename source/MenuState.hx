@@ -9,6 +9,7 @@ import flixel.system.debug.FlxDebugger.FlxDebuggerLayout;
 import extension.wakeLock.WakeLock;
 #end
 
+import com.goodidea.util.helpers.DragThrowController;
 import display.AutoNapeSprite;
 import display.CircleNapeSprite;
 import display.HUD;
@@ -17,19 +18,17 @@ import flash.display.Graphics;
 import flash.display.Sprite;
 import flash.events.MouseEvent;
 import flash.text.TextFormat;
+import flixel.addons.nape.FlxNapeSpace;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
-import flixel.addons.nape.FlxNapeSpace;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxSpriteUtil;
-import com.goodidea.util.helpers.DragThrowController;
 import nape.geom.Vec2;
 import nape.phys.Body;
 import nape.phys.BodyType;
-import openfl.Lib;
 import openfl.display.CapsStyle;
 import openfl.display.FPS;
 import openfl.display.JointStyle;
@@ -37,8 +36,9 @@ import openfl.display.LineScaleMode;
 import openfl.display.StageQuality;
 import openfl.geom.Point;
 import openfl.geom.Rectangle;
-import system.Settings;
+import openfl.Lib;
 import system.Audio;
+import system.Settings;
 
 class MenuState extends FlxState {
 	
@@ -56,7 +56,6 @@ class MenuState extends FlxState {
 	
 	
 	var hud:HUD;
-	
 	
 	
 	var bgSpr:FlxSprite;
@@ -132,11 +131,11 @@ class MenuState extends FlxState {
 		FlxG.console.registerClass(FlxNapeSpace);
 		
 		#end
-		
-		
-		//TODO: REMOVE THIS SHIT
-		//add(new FlxUIButton(FlxG.width / 2, FlxG.height / 2, Images.getPath("settings-icon")));
+
 	}
+
+
+
 
 	override public function update(elapsed:Float):Void {
 		
@@ -150,20 +149,6 @@ class MenuState extends FlxState {
 			//Inverting the x axis to align the device and the screen coordinates
 			FlxNapeSpace.space.gravity.setxy(FlxG.accelerometer.y * GRAVITY_FACTOR, FlxG.accelerometer.x * GRAVITY_FACTOR);
 		}
-		#end
-		
-		
-		#if FLX_KEYBOARD
-		/**
-		 * Remove all objects if F5 is pressed
-		 */
-		if (FlxG.keys.justReleased.F5) {
-			clearAdded();
-		}
-		#end
-		
-		#if !FLX_NO_TOUCH
-		if (FlxG.touches.list.length > 3) clearAdded();
 		#end
 
 		/**
@@ -204,7 +189,6 @@ class MenuState extends FlxState {
 		
 		
 		/**
-		 *  TODO: Add conditional for if drag thrower hand is active
 		 * for rain
 		 */
 		if (FlxG.mouse.pressed && hud.rainButton.on && !dragThrowController.hand.active && FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).length == 0) {
