@@ -1,0 +1,17 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="settings-modal.psd Asset/settings-modal/slider-on.png/slider-ball.png" itemID="59434b96-00000086" lastModified="1497582486">
+  <timeline>
+    <DOMTimeline name="slider-ball.png">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance selected="true" libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/Assets/slider-ball.png"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -43,38 +43,32 @@ import system.Audio;
 class MenuState extends FlxState {
 	
 
+	//TODO: move these to user settings
 	var granularity:Int = 10;
+	var thickness:Float = 30;
+	var GRAVITY_FACTOR:Float = Settings.gravity.y;
+
 	var drawing:Bool;
 	var mousePos:FlxPoint;
 	var ls:LineStyle;
 	var ds:DrawStyle;
-	var thickness:Float = 30;
 	var walls:Body;
 	
 	
 	var hud:HUD;
 	
-	var GRAVITY_FACTOR:Float = Settings.gravity.y;
 	
 	
 	var bgSpr:FlxSprite;
 	var g:Graphics;
 	var fps:openfl.display.FPS;
 	var drawSpr:Sprite;
-	var dragThrowController:com.goodidea.util.helpers.DragThrowController;
+	var dragThrowController:DragThrowController;
 	public var drawSprite:FlxSprite;
 	
 	
 	override public function create():Void {
 		super.create();
-		
-		/**
-		 * Keep screen on if running mobile
-		 * TODO: Doesn't seem to be working anymore
-		 */
-		#if android
-		WakeLock.setKeepScreenOn();
-		#end
 		
 		
 		drawSpr = new Sprite();
@@ -213,7 +207,7 @@ class MenuState extends FlxState {
 		 *  TODO: Add conditional for if drag thrower hand is active
 		 * for rain
 		 */
-		if (FlxG.mouse.pressed && hud.rainButton.on && !dragThrowController.hand.active) {
+		if (FlxG.mouse.pressed && hud.rainButton.on && !dragThrowController.hand.active && FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).length == 0) {
 			if (!Audio.blip.playing) {
 				Audio.blip.looped = true;
 				Audio.blip.play(true);

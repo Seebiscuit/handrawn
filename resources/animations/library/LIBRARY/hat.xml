@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hat" itemID="59420ad2-00000074" lastModified="1497500370">
+  <timeline>
+    <DOMTimeline name="hat">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/glasses" selected="true">
+                  <matrix>
+                    <Matrix tx="48" ty="127"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="94" y="47"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/hat" selected="true">
+                  <transformationPoint>
+                    <Point x="112.5" y="100.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

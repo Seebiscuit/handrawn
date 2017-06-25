@@ -1,12 +1,13 @@
 package display;
 
+#if android
+import system.AdmobController;
+#end
+
 import flash.display.DisplayObject;
 import flash.display.StageQuality;
 import flash.events.MouseEvent;
-#if android
-import extension.admob.AdMob;
-#end
-import flash.text.TextField;
+import system.Images;
 
 import flash.display.MovieClip;
 import flixel.FlxG;
@@ -30,18 +31,18 @@ class HUD extends FlxGroup {
 		super();
 		
 		
-		add(rainButton = new HUDToggleButton(0, 0, "assets/images/rain-btn.png", function(btn:HUDToggleButton) {
+		add(rainButton = new HUDToggleButton(0, 0, Images.getPath("rain-btn"), function(btn:HUDToggleButton) {
 			trace("cool dude" + btn.on);
 			
 		}));
-		add(stickyButton = new HUDToggleButton(150, 0, "assets/images/sticky-btn.png", function(btn:HUDToggleButton) {
+		add(stickyButton = new HUDToggleButton(150, 0, Images.getPath("sticky-btn"), function(btn:HUDToggleButton) {
 			trace("cool dude");
 			#if android
 			trace("showing banner");
 			AdmobController.showBanner();
 			#end
 		}));
-		add(refreshButton = new HUDButton(FlxG.width - 300, 0, "assets/images/refresh-btn.png", function(btn:HUDButton) {
+		add(refreshButton = new HUDButton(FlxG.width - 300, 0, Images.getPath("refresh-btn"), function(btn:HUDButton) {
 			
 			#if android
 			AdmobController.showInterstitial();
@@ -54,9 +55,9 @@ class HUD extends FlxGroup {
 		/**
 		 * 	TODO: manage popups differently
 		 */
-		add(menuButton = new HUDButton(FlxG.width - 150, 0, "assets/images/menu-btn.png", function(btn:HUDButton) {
+		add(menuButton = new HUDButton(FlxG.width - 150, 0, Images.getPath("menu-btn"), function(btn:HUDButton) {
 			
-			popup = Assets.getMovieClip("splash:settings_modal");
+			popup = Assets.getMovieClip("library:settings_modal");
 			popup.height = FlxG.stage.stageHeight;
 			popup.scaleX = popup.scaleY;
 			//popup.scaleX = popup.scaleY = FlxG.camera.totalScaleX;
@@ -71,18 +72,15 @@ class HUD extends FlxGroup {
 			closeButton.addEventListener(MouseEvent.CLICK, closeButton_click);
 			
 			var p:Dynamic = cast popup;
-			
-			var tfTest:TextField = cast p.togglers.music.txt;
-//			tfTest.text = "Hey Guys!";
-			
+						
 			var musicSlider:SliderButton = new SliderButton(p.togglers.music.slider, function(b:SliderButton) {
 				trace("cool " + b.on);
-				FlxG.sound.music.volume = b.on ? 1 : 0;
+				FlxG.sound.defaultMusicGroup.volume = b.on ? 1 : 0;
 			}, "yes", "no");
 
 			var sfxSlider:SliderButton = new SliderButton(p.togglers.sfx.slider, function(b:SliderButton) {
 				trace("sfx: " + b.on);
-				FlxG.sound.volume = b.on ? 1 : 0;
+				FlxG.sound.defaultSoundGroup.volume = b.on ? 1 : 0;
 			}, "yes", "no");
 			
 			var qualitySlider:SliderButton = new SliderButton(p.togglers.quality.slider, function(b:SliderButton) {
@@ -90,7 +88,12 @@ class HUD extends FlxGroup {
 				FlxG.stage.quality = b.on ? StageQuality.HIGH : StageQuality.LOW;
 				FlxG.camera.antialiasing = b.on;
 			}, "high", "low");
-			
+
+
+			musicSlider.on = FlxG.sound.defaultMusicGroup.volume != 0;
+			sfxSlider.on = FlxG.sound.defaultSoundGroup.volume != 0;
+			qualitySlider.on = FlxG.camera.antialiasing;
+
 			var adButton:MovieClip = cast p.remove_ad_btn;
 			adButton.addEventListener(MouseEvent.CLICK, adButton_click);
 

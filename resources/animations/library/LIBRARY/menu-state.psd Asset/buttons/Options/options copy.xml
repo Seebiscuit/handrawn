@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="menu-state.psd Asset/buttons/Options/options copy" itemID="594d8244-000000bf" lastModified="1498360709">
+  <timeline>
+    <DOMTimeline name="options copy">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="txt" selected="true" left="24.95" width="172" height="76.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix a="1.08102416992188" d="1.08102416992188" tx="-26.95" ty="-3.2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>OPTIONS</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="76.05" size="60" bitmapSize="1200" face="just_another_hand*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

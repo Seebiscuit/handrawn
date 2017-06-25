@@ -1,0 +1,44 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="menu-state.psd Asset/logo/logo" itemID="594d8242-0000008b" lastModified="1498251842">
+  <timeline>
+    <DOMTimeline name="logo">
+      <layers>
+        <DOMLayer name="letters" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/letters" name="letters">
+                  <transformationPoint>
+                    <Point x="505" y="190.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Physics for Kids." color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/Physics for Kids&amp;#046">
+                  <matrix>
+                    <Matrix tx="355" ty="411"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="148" y="50.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

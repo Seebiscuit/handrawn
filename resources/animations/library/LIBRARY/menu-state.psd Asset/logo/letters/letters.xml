@@ -1,0 +1,191 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="menu-state.psd Asset/logo/letters/letters" itemID="594d8242-00000094" lastModified="1498283988" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="letters">
+      <layers>
+        <DOMLayer name="n" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/n">
+                  <matrix>
+                    <Matrix tx="925" ty="210"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="42.5" y="64"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="w" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/w">
+                  <matrix>
+                    <Matrix tx="783" ty="174"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="60" y="73.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="a2" color="#669900" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/a2">
+                  <matrix>
+                    <Matrix tx="665" ty="189"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51.5" y="60"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="r" color="#808080" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/r">
+                  <matrix>
+                    <Matrix tx="571" ty="167"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="40.5" y="70.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="d" color="#009999" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/d">
+                  <matrix>
+                    <Matrix tx="397"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="74" y="162"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="n_1" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/n_1">
+                  <matrix>
+                    <Matrix tx="285" ty="182"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="42.5" y="64"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="a" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/a">
+                  <matrix>
+                    <Matrix tx="155" ty="190"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51" y="60"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="h" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/h">
+                  <matrix>
+                    <Matrix ty="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63" y="175.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/h" selected="true" centerPoint3DX="63.05" centerPoint3DY="205.55">
+                  <matrix>
+                    <Matrix a="0.990402221679688" b="-0.138214111328125" c="0.138214111328125" d="0.990402221679688" tx="-23.6" ty="40.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63" y="175.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/h" selected="true" centerPoint3DX="63.1" centerPoint3DY="205.55">
+                  <matrix>
+                    <Matrix a="1.013427734375" b="0.10693359375" c="-0.0975799560546875" d="0.924789428710938" tx="16.3" ty="36.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63.1" y="175.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/h" centerPoint3DX="63.1" centerPoint3DY="205.55">
+                  <matrix>
+                    <Matrix a="1.14114379882813" b="0.0461883544921875" c="-0.03472900390625" d="0.857925415039063" tx="-2.75" ty="52.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63.05" y="175.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/letters/h" selected="true" centerPoint3DX="63.05" centerPoint3DY="205.55">
+                  <matrix>
+                    <Matrix a="1.32794189453125" b="-0.261337280273438" c="0.182830810546875" d="0.929031372070313" tx="-52.65" ty="59.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="63" y="175.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

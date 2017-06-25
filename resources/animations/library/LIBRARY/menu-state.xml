@@ -1,0 +1,272 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="menu-state" itemID="594d8266-000000c1" linkageExportForAS="true" linkageClassName="main_menu" lastModified="1498364298" lastUniqueIdentifier="7">
+  <timeline>
+    <DOMTimeline name="menu-state" currentFrame="1">
+      <layers>
+        <DOMLayer name="labels" color="#009999" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="119" name="show" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="120" duration="34" name="hide" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="154" duration="46" name="end_hide" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="logo" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/logo" name="logo">
+                  <matrix>
+                    <Matrix tx="455" ty="62"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="505" y="256"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="24" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/logo" name="logo" centerPoint3DX="960" centerPoint3DY="318">
+                  <matrix>
+                    <Matrix a="1.3671875" d="1.3671875" tx="269.6" ty="-32"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="505.05" y="256"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="25" duration="93" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="1"/>
+                  <Point x="0.3293" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/logo" name="logo" selected="true" centerPoint3DX="960" centerPoint3DY="318">
+                  <matrix>
+                    <Matrix a="1.3671875" d="1.3671875" tx="269.6" ty="-32"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="505.05" y="256"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="118" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/logo" name="logo">
+                  <matrix>
+                    <Matrix tx="455" ty="62"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="505" y="256"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="122" duration="23" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.6199"/>
+                  <Point x="1" y="0.0582"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/logo" name="logo" centerPoint3DX="960" centerPoint3DY="318">
+                  <matrix>
+                    <Matrix tx="455" ty="62"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="505" y="256"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="0" blurY="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="145" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/logo/logo" name="logo" centerPoint3DX="960" centerPoint3DY="-98">
+                  <matrix>
+                    <Matrix tx="455" ty="-354"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="505" y="256"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="0" blurY="19"/>
+                  </filters>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="146" duration="54" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttons" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/buttons" name="buttons" selected="true">
+                  <matrix>
+                    <Matrix tx="705" ty="480"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="255.5" y="365.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="58" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/buttons" name="buttons" centerPoint3DX="966.5" centerPoint3DY="860.75">
+                  <matrix>
+                    <Matrix tx="705" ty="480"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="255.5" y="365.35"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="59" duration="36" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="1"/>
+                  <Point x="0.3293" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/buttons" name="buttons" centerPoint3DX="960.5" centerPoint3DY="1145.35">
+                  <matrix>
+                    <Matrix tx="705" ty="780"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="255.5" y="365.35"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="95" duration="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/buttons" name="buttons" selected="true">
+                  <matrix>
+                    <Matrix tx="705" ty="480"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="255.5" y="365.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="125" duration="24" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.6199"/>
+                  <Point x="1" y="0.0582"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/buttons" name="buttons" centerPoint3DX="966.5" centerPoint3DY="845.35">
+                  <matrix>
+                    <Matrix tx="705" ty="480"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="255.5" y="365.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="149" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/buttons" name="buttons" selected="true" centerPoint3DX="966.5" centerPoint3DY="1265.35">
+                  <matrix>
+                    <Matrix tx="705" ty="900"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="255.5" y="365.35"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="150" duration="50" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/bg" name="bg">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="25" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/bg" name="bg" centerPoint3DX="960" centerPoint3DY="540">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="26" duration="174" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/bg" name="bg" centerPoint3DX="960" centerPoint3DY="540">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

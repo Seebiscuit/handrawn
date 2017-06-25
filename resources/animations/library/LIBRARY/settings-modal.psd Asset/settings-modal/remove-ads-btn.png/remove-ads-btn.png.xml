@@ -1,0 +1,49 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="settings-modal.psd Asset/settings-modal/remove-ads-btn.png/remove-ads-btn.png" itemID="59434b93-0000003b" lastModified="1498362951">
+  <timeline>
+    <DOMTimeline name="remove-ads-btn.png">
+      <layers>
+        <DOMLayer name="Remove Ads" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMStaticText left="-8.15" width="160.3" height="76.05" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="205.35" ty="21.6"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Remove Ads</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" lineSpacing="-12.45" lineHeight="76.05" size="60" bitmapSize="1200" face="just_another_hand*" fillColor="#E2E2E2"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/remove-ads-btn.png/bg" blendMode="multiply">
+                  <transformationPoint>
+                    <Point x="280" y="55.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

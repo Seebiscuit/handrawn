@@ -1,6 +1,6 @@
 package display;
-import flash.display.FrameLabel;
-import flixel.FlxG;
+import flixel.util.FlxDestroyUtil.IFlxDestroyable;
+import flixel.util.FlxDestroyUtil;
 import motion.Actuate;
 import motion.easing.Linear;
 import openfl.Assets;
@@ -8,13 +8,11 @@ import openfl.Lib;
 import openfl.display.MovieClip;
 import openfl.errors.Error;
 
-import flixel.tweens.FlxTween;
-import flixel.tweens.misc.NumTween;
-
 typedef TimelineSegment = {
 start:Int,
 stop:Int,
-name:String
+name:String,
+?audio:String
 }
 
 
@@ -22,21 +20,20 @@ name:String
  * ...
  * @author Jonathan Snyder
  */
-class UIMovieClip {
+class UIMovieClip implements IFlxDestroyable {
 
 	public var mc:MovieClip;
 	public var dynamicMC:Dynamic;
 	public var currentFrame(get, set):Int;
 
 	public var labels:Array<TimelineSegment>;
-	private var animationTween:NumTween;
 
 	/**
 	 * Constructor
 	 * @param	AssetName Name of asset movieclip in library, or a movieclip itself
 	 * @param	LibraryName the libaray to grab the asset from
 	 */
-	public function new(?AssetName:Dynamic, LibraryName:String = "library") {
+	public function new(?AssetName:Dynamic, LibraryName:String = "library", ?AnimationXML:Xml) {
 		
 		
 		/**
@@ -50,6 +47,7 @@ class UIMovieClip {
 				mc = Assets.getMovieClip('${LibraryName}:${AssetName}');
 			} else if (Std.is(AssetName, MovieClip)) {
 				mc = cast AssetName;
+				
 			}
 			
 
@@ -68,6 +66,7 @@ class UIMovieClip {
 		//get label information so we can play sections of the timeline
 		labels = [];
 		for (l in mc.currentLabels) {
+			
 			var seg:TimelineSegment = {
 				start: l.frame,
 				stop: mc.totalFrames,
@@ -93,23 +92,18 @@ class UIMovieClip {
 	 * @param	label name of the label
 	 * @param	onComplete function that is called once animation has finished
 	 */
-	public function playLabel(label:String, ?onComplete:UIMovieClip -> Void) {
+	public function playLabel(Label:String, ?onComplete:UIMovieClip -> Void) {
 		
 		
-		var label = getLabelByString(label);
+		var label = getLabelByString(Label);
+		
+		trace(Label + " - " + label);
 		
 		
 		if (label != null) {
-			trace(label.start + " - " + label.stop);
 			
-			//If animationTween is non null
-			//Cancel it so we aren't overriding another tween
-			if (animationTween != null) {
-				animationTween.cancel();
-			}
-
 			//duration from start to end
-			var duration:Float = (label.stop - label.start) / FlxG.updateFramerate;
+			var duration:Float = Math.abs(label.stop - label.start) / Lib.current.stage.frameRate;
 
 			currentFrame = label.start;
 			trace(label.start + " - " + label.stop);
@@ -162,6 +156,24 @@ class UIMovieClip {
 		.onComplete(OnComplete, [this])
 		.ease(Linear.easeNone);
 		
+	}
+	
+	
+	/**
+	 * Destroy UIMovieClip
+	 */
+	public function destroy():Void {
+		trace("destroying");
+		Actuate.stop(this);
+		//labels = labels;
+		//FlxArrayUtil.clearArray(labels);
+		labels = null;
+		dynamicMC = null;
+		mc.removeChildren();
+		if (mc.parent != null) {
+			mc.parent.removeChild(mc);
+			mc = null;
+		}
 	}
 	
 	

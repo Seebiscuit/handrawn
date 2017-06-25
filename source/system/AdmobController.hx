@@ -13,7 +13,7 @@ using StringTools;
  * ...
  * @author Jonathan Snyder
  */
-class system.AdmobController {
+class AdmobController {
 
 	static var data:AdmobData;
 

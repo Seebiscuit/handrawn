@@ -13,5 +13,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="4,2,0" level="application" />
     <orderEntry type="library" name="basic" level="application" />
+    <orderEntry type="library" name="Android Extensions" level="application" />
   </component>
 </module>

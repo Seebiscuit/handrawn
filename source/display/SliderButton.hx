@@ -1,7 +1,6 @@
 package display;
 
 import flash.text.TextField;
-import haxe.Constraints.Function;
 import openfl.events.MouseEvent;
 
 
@@ -17,7 +16,7 @@ class SliderButton extends UIMovieClip {
 
 
 	public function new(mc:Dynamic, ?OnClick:SliderButton -> Void, on:String = "on", off:String = "off") {
-		super(mc, "splash");
+		super(mc, "library");
 		
 		onClick = OnClick;
 		

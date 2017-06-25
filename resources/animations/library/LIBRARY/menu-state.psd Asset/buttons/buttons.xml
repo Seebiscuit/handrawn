@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="menu-state.psd Asset/buttons/buttons" itemID="594d8242-0000006f" lastModified="1498251842">
+  <timeline>
+    <DOMTimeline name="buttons">
+      <layers>
+        <DOMLayer name="Options" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/Options" name="options_btn" selected="true">
+                  <matrix>
+                    <Matrix ty="215"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="98" y="150.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Play" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Play/Play" name="play_btn">
+                  <matrix>
+                    <Matrix tx="315" ty="215"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="98" y="150.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

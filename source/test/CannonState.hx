@@ -1,16 +1,5 @@
 package test;
 
-import test.CannonSprite;
-import flixel.FlxG;
-import flixel.FlxState;
-import flixel.addons.nape.FlxNapeSpace;
-import flixel.addons.nape.FlxNapeSprite;
-import flixel.util.FlxColor;
-import nape.phys.Body;
-import nape.phys.BodyType;
-import nape.shape.Circle;
-import system.Settings;
-
 class test.CannonState extends FlxState {
 var circleNapeSprite:FlxNapeSprite;
 var testCannon:CannonSprite;

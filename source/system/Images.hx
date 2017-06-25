@@ -1,5 +1,4 @@
 package system;
-import flixel.FlxG;
 import openfl.Assets;
 
 /**
@@ -12,11 +11,7 @@ class Images {
 	public static function init():Void {
 		vals = Assets.list(AssetType.IMAGE);
 
-
-		#if FLX_DEBUG
-		FlxG.console.registerClass(Assets);
-		FlxG.console.registerClass(Images);
-		#end
+		
 	}
 
 

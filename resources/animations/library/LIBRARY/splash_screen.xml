@@ -1,0 +1,796 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="splash_screen" itemID="594210db-000001b6" linkageExportForAS="true" linkageClassName="splash_screen" lastModified="1498335120" lastUniqueIdentifier="22">
+  <timeline>
+    <DOMTimeline name="splash_screen" currentFrame="102">
+      <layers>
+        <DOMLayer name="blackthing" color="#669900" locked="true" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" duration="240" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="240" duration="101" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="341" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1" centerPoint3DX="960" centerPoint3DY="540">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="default images_hi-def_" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Sue Ellen Francisco " color="#009999" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="splash-bg.jpg" color="#9933CC" locked="true" autoNamed="false" layerType="folder"/>
+        <DOMLayer name="hat" color="#FF4FFF" parentLayerIndex="3" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="hat" centerPoint3DX="856.6" centerPoint3DY="335.55">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="722.55" ty="210"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="118" y="110.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="25" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="hat">
+                  <matrix>
+                    <Matrix tx="750" ty="251"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="118" y="110.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="26" duration="65" tweenType="motion" useSingleEaseCurve="false" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="position">
+                  <Point/>
+                  <Point y="0.8664"/>
+                  <Point x="0.1687" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+                <CustomEase target="rotation">
+                  <Point/>
+                  <Point y="0.8425"/>
+                  <Point x="0.2663" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+                <CustomEase target="scale">
+                  <Point/>
+                  <Point y="0.8356"/>
+                  <Point x="0.0711" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+                <CustomEase target="filters">
+                  <Point/>
+                  <Point x="0.2236" y="0.5822"/>
+                  <Point x="0.3943" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="hat" selected="true" centerPoint3DX="960" centerPoint3DY="455.8">
+                  <matrix>
+                    <Matrix a="2.99029541015625" d="2.99029541015625" tx="607.3" ty="125.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="118.05" y="110.65"/>
+                  </transformationPoint>
+                  <filters>
+                    <GlowFilter blurX="113" blurY="113" color="#00FFFF"/>
+                  </filters>
+                  <color>
+                    <Color tintMultiplier="1" tintColor="#00FFFF"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="91" duration="167" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.2343" y="0.5308"/>
+                  <Point x="0.3984" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="hat" selected="true" centerPoint3DX="868" centerPoint3DY="361.5">
+                  <matrix>
+                    <Matrix tx="750" ty="251"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="118" y="110.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <GlowFilter blurX="0" blurY="0" strength="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="258" duration="59" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="hat" centerPoint3DX="856.6" centerPoint3DY="335.55">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="722.55" ty="210"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="118" y="110.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <GlowFilter blurX="0" blurY="0" strength="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="317" duration="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="hat" selected="true" centerPoint3DX="856.6" centerPoint3DY="335.55">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="722.55" ty="210"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="118" y="110.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="the" color="#FF4F4F" parentLayerIndex="3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/the" centerPoint3DX="637.05" centerPoint3DY="484.6">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="556.35" ty="435.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="71.05" y="43"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="0" blurY="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="52" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/the">
+                  <matrix>
+                    <Matrix tx="609" ty="455"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="71" y="43"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="22" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="0.8562"/>
+                  <Point y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/the" centerPoint3DX="174" centerPoint3DY="619">
+                  <matrix>
+                    <Matrix a="1.7957763671875" b="-0.2926025390625" tx="103" ty="576"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="71" y="43.05"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="27" blurY="0"/>
+                  </filters>
+                  <color>
+                    <Color alphaMultiplier="0.578125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="75" duration="183" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.2343" y="0.5308"/>
+                  <Point x="0.3984" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/the" centerPoint3DX="680" centerPoint3DY="498">
+                  <matrix>
+                    <Matrix tx="609" ty="455"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="71" y="43"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="0" blurY="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="258" duration="59" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/the" centerPoint3DX="637.05" centerPoint3DY="484.6">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="556.35" ty="435.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="71.05" y="43"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="0" blurY="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="317" duration="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/the" selected="true" centerPoint3DX="637.05" centerPoint3DY="484.6">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="556.35" ty="435.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="71.05" y="43"/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="0" blurY="0"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="good" color="#669900" parentLayerIndex="3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/good" centerPoint3DX="761.8" centerPoint3DY="599.5">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="590.8" ty="490.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.55" y="96"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="54" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/good">
+                  <matrix>
+                    <Matrix tx="649" ty="497"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.5" y="96"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="55" duration="31" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="0.8562"/>
+                  <Point y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/good" centerPoint3DX="325" centerPoint3DY="710">
+                  <matrix>
+                    <Matrix tx="174.5" ty="614"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.5" y="96"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="86" duration="172" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.2343" y="0.5308"/>
+                  <Point x="0.3984" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/good" centerPoint3DX="799.5" centerPoint3DY="593">
+                  <matrix>
+                    <Matrix tx="649" ty="497"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.5" y="96"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="258" duration="59" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/good" centerPoint3DX="761.8" centerPoint3DY="599.5">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="590.8" ty="490.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.55" y="96"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="317" duration="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/good" selected="true" centerPoint3DX="761.8" centerPoint3DY="599.5">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="590.8" ty="490.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.55" y="96"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="idea" color="#808080" parentLayerIndex="3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/idea" centerPoint3DX="1127.9" centerPoint3DY="520.8">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="983.05" ty="436.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="127.5" y="74.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="57" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/idea">
+                  <matrix>
+                    <Matrix tx="967" ty="458"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="127.5" y="74.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="58" duration="40" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="0.8562"/>
+                  <Point y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/idea" centerPoint3DX="1516" centerPoint3DY="434">
+                  <matrix>
+                    <Matrix tx="1388.5" ty="359.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="127.5" y="74.5"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="98" duration="160" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.2343" y="0.5308"/>
+                  <Point x="0.3984" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/idea" centerPoint3DX="1094.5" centerPoint3DY="532.5">
+                  <matrix>
+                    <Matrix tx="967" ty="458"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="127.5" y="74.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="258" duration="59" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/idea" centerPoint3DX="1127.9" centerPoint3DY="520.8">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="983.05" ty="436.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="127.5" y="74.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="317" duration="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/idea" selected="true" centerPoint3DX="1127.9" centerPoint3DY="520.8">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="983.05" ty="436.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="127.5" y="74.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="company" color="#009999" parentLayerIndex="3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/company" centerPoint3DX="1041" centerPoint3DY="746">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="745.65" ty="617.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="113.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="60" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/company">
+                  <matrix>
+                    <Matrix tx="775" ty="584"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="113"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="61" duration="43" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="0.8562"/>
+                  <Point y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/company" centerPoint3DX="1129" centerPoint3DY="1017">
+                  <matrix>
+                    <Matrix tx="869" ty="904"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="113"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="104" duration="154" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.2343" y="0.5308"/>
+                  <Point x="0.3984" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/company" centerPoint3DX="1035" centerPoint3DY="697">
+                  <matrix>
+                    <Matrix tx="775" ty="584"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="113"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="258" duration="59" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/company" centerPoint3DX="1041" centerPoint3DY="746">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="745.65" ty="617.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="113.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="317" duration="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/company" selected="true" centerPoint3DX="1041" centerPoint3DY="746">
+                  <matrix>
+                    <Matrix a="1.13595581054688" d="1.13595581054688" tx="745.65" ty="617.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="260" y="113.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="particles copy" color="#9933CC" parentLayerIndex="3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" centerPoint3DX="1004.6" centerPoint3DY="490.1">
+                  <matrix>
+                    <Matrix a="-1.44770812988281" b="-0.011260986328125" c="0.0121307373046875" d="-1.55894470214844" tx="1798.35" ty="979.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="550.85" y="310"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="67" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles">
+                  <matrix>
+                    <Matrix tx="586" ty="161"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551" y="310"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="68" duration="249" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.335771707660473" y="0.335445503623651"/>
+                  <Point x="0.628391265899111" y="0.689562142264172"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" selected="true" centerPoint3DX="808.95" centerPoint3DY="471.2">
+                  <matrix>
+                    <Matrix a="-0.33905029296875" b="0.01324462890625" c="-0.0154876708984375" d="-0.39642333984375" tx="1000.6" ty="586.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551.1" y="310.15"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="317" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" selected="true" centerPoint3DX="1004.6" centerPoint3DY="490.1">
+                  <matrix>
+                    <Matrix a="-1.44770812988281" b="-0.011260986328125" c="0.0121307373046875" d="-1.55894470214844" tx="1798.35" ty="979.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="550.85" y="310"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="318" duration="25" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="particles" color="#9933CC" parentLayerIndex="3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" centerPoint3DX="960" centerPoint3DY="546">
+                  <matrix>
+                    <Matrix a="1.31289672851563" d="1.31289672851563" tx="236.6" ty="139.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551" y="310.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="67" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles">
+                  <matrix>
+                    <Matrix tx="586" ty="161"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551" y="310"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="68" duration="69" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.335771707660473" y="0.335445503623651"/>
+                  <Point x="0.628391265899111" y="0.689562142264172"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" centerPoint3DX="954" centerPoint3DY="529.95">
+                  <matrix>
+                    <Matrix a="0.709609985351563" d="0.709609985351563" tx="563" ty="310.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551.1" y="310.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="137" duration="180" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.213193598939874" y="0.521265927356992"/>
+                  <Point x="0.494208713882708" y="0.93276610922302"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" centerPoint3DX="957.15" centerPoint3DY="538.45">
+                  <matrix>
+                    <Matrix a="1.02854919433594" d="1.02854919433594" tx="390.4" ty="219.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551.05" y="310.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="317" duration="25" tweenType="motion" keyMode="17921">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" centerPoint3DX="960" centerPoint3DY="546">
+                  <matrix>
+                    <Matrix a="1.31289672851563" d="1.31289672851563" tx="236.6" ty="139.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551" y="310.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="342" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/particles" centerPoint3DX="959.85" centerPoint3DY="545.9">
+                  <matrix>
+                    <Matrix a="1.31015014648438" d="1.31015014648438" tx="237.95" ty="139.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="551.1" y="310.1"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#FF800A" parentLayerIndex="3" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/bg" centerPoint3DX="960" centerPoint3DY="540">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="43" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/bg">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" duration="76" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/bg" centerPoint3DX="960" centerPoint3DY="540">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="120" duration="223" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="splash-screen.psd Asset/splash-bg.jpg/bg" centerPoint3DX="960" centerPoint3DY="540">
+                  <transformationPoint>
+                    <Point x="960" y="540"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
