@@ -1,0 +1,17 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/modal-bg.png's Drop Shadow" itemID="59434b93-00000030" lastModified="1497582483">
+  <timeline>
+    <DOMTimeline name="modal-bg.png's Drop Shadow">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance selected="true" libraryItemName="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets/modal-bg.png's Drop Shadow"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

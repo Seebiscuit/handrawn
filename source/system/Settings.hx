@@ -13,12 +13,12 @@ import openfl.display.MovieClip;
 class Settings {
 
 
-	public static var material:Material = new Material(0.3, 0.01, 0.01, 0.01, 0.0001);
+	public static var material:Material = new Material(0.3, 0.01, 0.01, 0.0001, 0.0005);
 	public static var space:Space;
 	public static var menu:MovieClip;
-	public static var gravity:Vec2 = Vec2.get(0, 5000);
+	public static var gravity:Vec2 = Vec2.get(0, 7500);
 	public static var hud:HUD;
-	public static var interationAmount(default, set):Int = 15;
+	public static var interationAmount(default, set):Int = 5;
 	
 	public static function togglePhysics(pause:Bool = true):Void {
 		if (pause) {
@@ -28,8 +28,7 @@ class Settings {
 		}
 	}
 	
-	static function set_interationAmount(value:Int):Int 
-	{
+	static function set_interationAmount(value:Int):Int {
 		FlxNapeSpace.velocityIterations = FlxNapeSpace.positionIterations = value;
 		return interationAmount = value;
 	}

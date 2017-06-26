@@ -10,6 +10,7 @@ class HUDToggleButton extends HUDButton {
 	
 	public var on(default, set):Bool = false;
 	var toggleClick:HUDToggleButton -> Void;
+
 	function set_on(value:Bool):Bool {
 		alpha = value ? 1 : .2;
 		return on = value;
@@ -19,10 +20,10 @@ class HUDToggleButton extends HUDButton {
 	public function new(?X:Float = 0, ?Y:Float = 0, ?SimpleGraphic:FlxGraphicAsset, ?OnClick:HUDToggleButton -> Void, ?On:Bool) {
 		toggleClick = OnClick;
 		
-		super(X, Y, SimpleGraphic, function(btn:HUDButton){
+		super(X, Y, SimpleGraphic, function(btn:HUDButton) {
 			on = !on;
 			
-			if (toggleClick != null){
+			if (toggleClick != null) {
 				toggleClick(this);
 			}
 			

@@ -1,0 +1,44 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="settings-modal.psd Asset/settings-modal/modal-bg.png" itemID="59434b93-0000002c" lastModified="1497582483">
+  <timeline>
+    <DOMTimeline name="modal-bg.png">
+      <layers>
+        <DOMLayer name="modal-bg.png" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/modal-bg.png" selected="true">
+                  <matrix>
+                    <Matrix tx="79" ty="45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="280" y="338"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="modal-bg.png's Drop Shadow" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/modal-bg.png's Drop Shadow" selected="true" blendMode="multiply">
+                  <transformationPoint>
+                    <Point x="359" y="417"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

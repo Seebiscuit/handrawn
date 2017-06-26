@@ -1,5 +1,8 @@
 package test;
 
+import com.goodidea.util.helpers.DragThrowController;
+import com.goodidea.util.helpers.DragThrowController;
+import com.goodidea.util.helpers.DragThrowController;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;

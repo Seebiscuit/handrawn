@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="HAXE_MODULE" version="4">
   <component name="HaxeModuleSettingsStorage">
+    <option name="buildConfig" value="3" />
+    <option name="excludeFromCompilation" value="true" />
+    <option name="flexSdkName" value="4.6.0+21.0.0" />
+    <option name="haxeTarget" value="C++" />
+    <option name="hxmlPath" value="$MODULE_DIR$/export/windows/cpp/haxe/debug.hxml" />
+    <option name="openFLPath" value="$MODULE_DIR$/Project.xml" />
+    <option name="openFLTarget" value="Windows" />
     <option name="outputFolder" value="$MODULE_DIR$/out/production/experiments" />
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -9,9 +16,84 @@
       <sourceFolder url="file://$MODULE_DIR$/source" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/export" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Haxe 3.4.2" jdkType="Haxe toolkit" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="4,2,0" level="application" />
-    <orderEntry type="library" name="basic" level="application" />
+    <orderEntry type="module-library">
+      <library name="haxelib|openfl">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/openfl/3,6,1" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/openfl/3,6,1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haxelib|actuate">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/actuate/1,8,7" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/actuate/1,8,7" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haxelib|flixel">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/flixel/4,2,1" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/flixel/4,2,1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haxelib|flixel-addons">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/flixel-addons/2,4,1" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/flixel-addons/2,4,1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haxelib|nape">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/nape/2,0,20" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/nape/2,0,20" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haxelib|swf">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/swf/2,3,1" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/swf/2,3,1" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="haxelib|tjson">
+        <CLASSES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/tjson/1,4,0" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/HaxeToolkit/haxe/lib/tjson/1,4,0" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

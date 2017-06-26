@@ -1,0 +1,371 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="slider_component" itemID="594f15c5-00000101" linkageExportForAS="true" linkageClassName="slider_component" lastModified="1498365037" lastUniqueIdentifier="4">
+  <timeline>
+    <DOMTimeline name="slider_component" currentFrame="14">
+      <layers>
+        <DOMLayer name="labels" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="14" name="off" labelType="name" keyMode="9728" soundName="click_1.ogg" soundSync="stream">
+              <SoundEnvelope>
+                <SoundEnvelopePoint level0="32768" level1="32768"/>
+              </SoundEnvelope>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" duration="15" name="on" labelType="name" keyMode="9728" soundName="click_11.ogg" soundSync="stream">
+              <SoundEnvelope>
+                <SoundEnvelopePoint level0="32768" level1="32768"/>
+              </SoundEnvelope>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="slider-ball.png" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/slider-ball.png" centerPoint3DX="21.75" centerPoint3DY="27">
+                  <matrix>
+                    <Matrix tx="-4.25" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="26" y="26"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter saturation="-100"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="0.9623"/>
+                  <Point y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/slider-ball.png" centerPoint3DX="109" centerPoint3DY="27">
+                  <matrix>
+                    <Matrix tx="83" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="26" y="26"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/slider-ball.png" centerPoint3DX="21.75" centerPoint3DY="27">
+                  <matrix>
+                    <Matrix tx="-4.25" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="26" y="26"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter saturation="-100"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="14" tweenType="motion" hasCustomEase="true" keyMode="17921">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="1"/>
+                  <Point x="0.0224" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/slider-ball.png" centerPoint3DX="21.75" centerPoint3DY="27">
+                  <matrix>
+                    <Matrix tx="-4.25" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="26" y="26"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter saturation="-100"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/slider-ball.png" centerPoint3DX="109" centerPoint3DY="27">
+                  <matrix>
+                    <Matrix tx="83" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="26" y="26"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="off_txt" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/OFF" name="off_txt" centerPoint3DX="61.85" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="42.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="0.9623"/>
+                  <Point y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/OFF" name="off_txt" centerPoint3DX="86.85" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="67.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/OFF" name="off_txt" selected="true" centerPoint3DX="61.95" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="43" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="14" tweenType="motion" hasCustomEase="true" keyMode="17921">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="1"/>
+                  <Point x="0.0224" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/OFF" name="off_txt" centerPoint3DX="61.85" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="42.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/OFF" name="off_txt" centerPoint3DX="86.85" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="67.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="on_txt" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/ON" name="on_txt" selected="true" centerPoint3DX="46.85" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="27.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/ON" name="on_txt" selected="true" centerPoint3DX="46.85" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="27.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/ON" name="on_txt" centerPoint3DX="46.85" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="27.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point y="1"/>
+                  <Point x="0.0224" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/ON" name="on_txt" selected="true" centerPoint3DX="-13.15" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix tx="-32.1" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/ON" name="on_txt">
+                  <matrix>
+                    <Matrix tx="5.9" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.1" y="10.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#FF800A" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-652 -540|4815 -540!4815 -540|4815 1527!4815 1527|-652 1527!-652 1527|-652 -540"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/bg" centerPoint3DX="65" centerPoint3DY="26.5">
+                  <matrix>
+                    <Matrix ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="65" y="21.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter saturation="-100"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/bg" centerPoint3DX="65" centerPoint3DY="26.5">
+                  <matrix>
+                    <Matrix ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="65" y="21.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter saturation="-100"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/bg" centerPoint3DX="65" centerPoint3DY="26.5">
+                  <matrix>
+                    <Matrix ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="65" y="21.5"/>
+                  </transformationPoint>
+                  <filters>
+                    <AdjustColorFilter saturation="-100"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/slider-on.png/bg">
+                  <matrix>
+                    <Matrix ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="65" y="21.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

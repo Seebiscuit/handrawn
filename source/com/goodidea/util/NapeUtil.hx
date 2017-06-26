@@ -108,7 +108,11 @@ class IsoBody {
 			
 			//Recycle GeomPoly and it's vertices
 			p.dispose();
+
+
 		}
+
+		polys.clear();
 		
 		/**
 		 * If there are no shapes

@@ -2,7 +2,6 @@ package com.goodidea.util;
 
 import flixel.FlxG;
 import haxe.Json;
-import sys.FileSystem;
 import sys.io.File;
 import tjson.TJSON;
 

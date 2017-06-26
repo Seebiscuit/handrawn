@@ -1,0 +1,155 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="menu-state.psd Asset/buttons/Play/Play" itemID="594d8242-00000072" lastModified="1498356228" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Play">
+      <layers>
+        <DOMLayer name="labels" color="#4F80FF" outline="true" useOutlineView="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="18" name="down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="61" name="up" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="play" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="play_caption" name="caption">
+                  <matrix>
+                    <Matrix tx="4" ty="213.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="102" y="43.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="79" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="play_caption" name="caption" centerPoint3DX="106" centerPoint3DY="257.25">
+                  <matrix>
+                    <Matrix tx="4" ty="213.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="102" y="43.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="play-icon.png" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="menu-state.psd Asset/buttons/Play/play-icon.png">
+                  <matrix>
+                    <Matrix tx="66" ty="66"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="18" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="menu-state.psd Asset/buttons/Play/play-icon.png">
+                  <matrix>
+                    <Matrix tx="66" ty="76"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Tween 1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="105" ty="109.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="50" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Tween 2" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="105" ty="99.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Ellipse 1" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="menu-state.psd Asset/buttons/Play/Ellipse 1"/>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="18" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="menu-state.psd Asset/buttons/Play/Ellipse 1">
+                  <matrix>
+                    <Matrix ty="10"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Tween 3" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="98" ty="111"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="50" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Tween 4" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="98" ty="101"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="transparent" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="80" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-600 -360|4520 -360!4520 -360|4520 6920!4520 6920|-600 6920!-600 6920|-600 -360"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

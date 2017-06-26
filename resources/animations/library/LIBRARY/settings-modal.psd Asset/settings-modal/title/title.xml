@@ -1,0 +1,52 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="settings-modal.psd Asset/settings-modal/title/title" itemID="59434b96-00000044" lastModified="1498334283">
+  <timeline>
+    <DOMTimeline name="title">
+      <layers>
+        <DOMLayer name="icon" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="settings-modal.psd Asset/settings-modal/title/icon">
+                  <matrix>
+                    <Matrix ty="4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.5" y="24.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Options" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMStaticText width="102.15" height="76.05" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.9417724609375" d="0.946044921875" tx="68.5" ty="-3.7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Options</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" lineSpacing="0" lineHeight="76.05" size="60" bitmapSize="1200" face="just_another_hand*" fillColor="#272727"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

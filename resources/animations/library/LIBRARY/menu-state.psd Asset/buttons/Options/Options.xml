@@ -1,0 +1,153 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="menu-state.psd Asset/buttons/Options/Options" itemID="594d8242-0000007b" lastModified="1498356222" lastUniqueIdentifier="2">
+  <timeline>
+    <DOMTimeline name="Options">
+      <layers>
+        <DOMLayer name="labels" color="#4F80FF" outline="true" useOutlineView="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="18" name="down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="61" name="up" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="options" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="80" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/options copy" name="caption" selected="true">
+                  <matrix>
+                    <Matrix tx="2.15" ty="219.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="50.85" y="38"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="cog-icon" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/cog-icon" name="icon">
+                  <matrix>
+                    <Matrix tx="51" ty="48"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51" y="51"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/cog-icon" name="icon" centerPoint3DX="102" centerPoint3DY="119">
+                  <matrix>
+                    <Matrix tx="51" ty="68"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51" y="51"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="10" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/cog-icon" name="icon" centerPoint3DX="102" centerPoint3DY="119">
+                  <matrix>
+                    <Matrix tx="51" ty="68"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51" y="51"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" duration="51" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/cog-icon" name="icon">
+                  <matrix>
+                    <Matrix tx="51" ty="48"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51" y="51"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/bg" name="bg">
+                  <transformationPoint>
+                    <Point x="98" y="101"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/bg" name="bg" centerPoint3DX="98" centerPoint3DY="121">
+                  <matrix>
+                    <Matrix ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="98" y="101"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="10" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/bg" name="bg" centerPoint3DX="98" centerPoint3DY="121">
+                  <matrix>
+                    <Matrix ty="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="98" y="101"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" duration="51" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="menu-state.psd Asset/buttons/Options/bg" name="bg">
+                  <transformationPoint>
+                    <Point x="98" y="101"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="transparent" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="80" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-600 -360|4520 -360!4520 -360|4520 6920!4520 6920|-600 6920!-600 6920|-600 -360"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

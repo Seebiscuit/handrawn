@@ -1,0 +1,203 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#000000" width="1920" height="1080" frameRate="60" currentTimeline="1" xflVersion="2.9" creatorInfo="Adobe Animate CC" platform="Windows" versionInfo="Saved by Animate Windows 16.2 build 24" majorVersion="16" minorVersion="2" buildNumber="24" pixelSnap="true" objectsSnapTo="false" viewAngle3D="122.353661987282" previewMode="fast" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F" fileGUID="27C658122420B443946998DB4D58BCEF">
+     <folders>
+          <DOMFolderItem name="menu-state.psd Asset" itemID="594d8242-00000066" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/Assets" itemID="594d8242-00000067" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/buttons" itemID="594d8242-0000006d" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/buttons/Options" itemID="594d8242-00000079" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/buttons/Options/Assets" itemID="594d8242-0000007c" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/buttons/Play" itemID="594d8242-00000070" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/logo" itemID="594d8242-00000089" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/logo/Assets" itemID="594d8242-0000008c" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/logo/letters" itemID="594d8242-00000092" isExpanded="true"/>
+          <DOMFolderItem name="menu-state.psd Asset/logo/letters/Assets" itemID="594d8242-00000095" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset" itemID="59434b93-00000028" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal" itemID="59434b93-00000029" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/Assets" itemID="59434b93-0000002a" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png" itemID="59434b93-0000002d" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets" itemID="59434b93-0000002e" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/music" itemID="59434b96-0000004b" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/music/Assets" itemID="59434b96-0000004e" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/quality" itemID="59434b96-0000005d" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/quality/Assets" itemID="59434b96-00000060" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/remove-ads-btn.png" itemID="59434b93-00000039" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/remove-ads-btn.png/Assets" itemID="59434b93-0000003c" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/sfx" itemID="59434b96-00000054" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/sfx/Assets" itemID="59434b96-00000057" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/slider-off.png" itemID="59434b96-00000066" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/slider-off.png/Assets" itemID="59434b96-00000069" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/slider-off.png/Assets/Rounded Rectangle 1" itemID="59434b96-0000006c" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/slider-on.png" itemID="59434b96-0000007a" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/slider-on.png/Assets" itemID="59434b96-0000007d" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/title" itemID="59434b96-00000042" isExpanded="true"/>
+          <DOMFolderItem name="settings-modal.psd Asset/settings-modal/title/Assets" itemID="59434b96-00000045" isExpanded="true"/>
+          <DOMFolderItem name="splash-screen.psd Asset" itemID="59420aa4-00000033" isExpanded="true"/>
+          <DOMFolderItem name="splash-screen.psd Asset/Assets" itemID="59420aa4-0000006b" isExpanded="true"/>
+          <DOMFolderItem name="splash-screen.psd Asset/splash-bg.jpg" itemID="59420aa4-00000034" isExpanded="true"/>
+          <DOMFolderItem name="splash-screen.psd Asset/splash-bg.jpg/Assets" itemID="59420aa4-00000035" isExpanded="true"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="just_another_hand" itemID="5949da09-00000065" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="just_another_hand" font="JustAnotherHand-Regular" size="0" id="4" sourceLastImported="1498363264" embedRanges="1|2|3|4"/>
+          <DOMFontItem name="Lato" itemID="594f3291-00000082" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="Lato" font="Lato-Bold" size="0" id="1" sourceLastImported="1497582593" embedRanges="1|2|3|4"/>
+     </fonts>
+     <media>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/a" itemID="594d8242-0000009f" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/a" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/a" bitmapDataHRef="M 33 1498251842.dat" frameRight="2040" frameBottom="2400"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/a2" itemID="594d8242-000000b3" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/a2" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/a2" bitmapDataHRef="M 37 1498251842.dat" frameRight="2060" frameBottom="2400"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/bg" itemID="59420aa4-0000003a" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/bg" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/bg" bitmapDataHRef="M 13 1497500324.dat" frameRight="38400" frameBottom="21600"/>
+          <DOMBitmapItem name="settings-modal.psd Asset/settings-modal/remove-ads-btn.png/Assets/bg" itemID="59434b93-00000041" sourceExternalFilepath="./LIBRARY/settings-modal.psd Asset/settings-modal/remove-ads-btn.png/Assets/bg" sourceLastImported="1497582483" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="settings-modal.psd Asset/settings-modal/remove-ads-btn.png/Assets/bg" bitmapDataHRef="M 15 1497582483.dat" frameRight="11200" frameBottom="2220"/>
+          <DOMBitmapItem name="settings-modal.psd Asset/settings-modal/slider-on.png/Assets/bg" itemID="59434b96-00000082" sourceExternalFilepath="./LIBRARY/settings-modal.psd Asset/settings-modal/slider-on.png/Assets/bg" sourceLastImported="1497582486" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="settings-modal.psd Asset/settings-modal/slider-on.png/Assets/bg" bitmapDataHRef="M 23 1497582486.dat" frameRight="2600" frameBottom="860"/>
+          <DOMBitmapItem name="menu-state.psd Asset/Assets/bg" itemID="594d8242-0000006c" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/Assets/bg" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/Assets/bg" bitmapDataHRef="M 26 1498251842.dat" frameRight="38400" frameBottom="21600"/>
+          <DOMBitmapItem name="menu-state.psd Asset/buttons/Options/Assets/bg" itemID="594d8242-00000081" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/buttons/Options/Assets/bg" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/buttons/Options/Assets/bg" bitmapDataHRef="M 29 1498251842.dat" frameRight="3920" frameBottom="4040"/>
+          <DOMSoundItem name="click_1.ogg" itemID="594f0730-000000be" sourceExternalFilepath="./LIBRARY/click_1.ogg" sourceLastImported="1498351396" externalFileCRC32="3059775048" externalFileSize="7068" href="click_1.ogg" soundDataHRef="M 49 1498351408.dat" format="44kHz 16bit Stereo" sampleCount="2554" dataLength="10216"/>
+          <DOMSoundItem name="click_11.ogg" itemID="594f0730-000000e6" sourceExternalFilepath="./LIBRARY/click_11.ogg" sourceLastImported="1498351397" externalFileCRC32="123092742" externalFileSize="7584" href="click_11.ogg" soundDataHRef="M 59 1498351408.dat" format="44kHz 16bit Stereo" sampleCount="2193" dataLength="8772"/>
+          <DOMBitmapItem name="menu-state.psd Asset/buttons/Options/Assets/cog-icon" itemID="594d8242-00000086" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/buttons/Options/Assets/cog-icon" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/buttons/Options/Assets/cog-icon" bitmapDataHRef="M 30 1498251842.dat" frameRight="2040" frameBottom="2040"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/company" itemID="59420aa4-00000044" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/company" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/company" bitmapDataHRef="M 15 1497500324.dat" frameRight="10400" frameBottom="4520"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/d" itemID="594d8242-000000a9" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/d" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/d" bitmapDataHRef="M 35 1498251842.dat" frameRight="2960" frameBottom="6480"/>
+          <DOMBitmapItem name="menu-state.psd Asset/buttons/Play/Ellipse 1" itemID="594d8242-00000075" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/buttons/Play/Ellipse 1" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/buttons/Play/Ellipse 1" bitmapDataHRef="M 27 1498251842.dat" frameRight="3920" frameBottom="4040"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/glasses" itemID="59420aa4-00000062" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/glasses" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/glasses" bitmapDataHRef="M 21 1497500324.dat" frameRight="3760" frameBottom="1880"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/good" itemID="59420aa4-0000004e" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/good" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/good" bitmapDataHRef="M 17 1497500324.dat" frameRight="6020" frameBottom="3840"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/h" itemID="594d8242-0000009a" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/h" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/h" bitmapDataHRef="M 32 1498251842.dat" frameRight="2520" frameBottom="7020"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/hat" itemID="59420aa4-00000067" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/hat" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/hat" bitmapDataHRef="M 22 1497500324.dat" frameRight="4500" frameBottom="4020"/>
+          <DOMBitmapItem name="settings-modal.psd Asset/settings-modal/title/Assets/icon" itemID="59434b96-0000004a" sourceExternalFilepath="./LIBRARY/settings-modal.psd Asset/settings-modal/title/Assets/icon" sourceLastImported="1497582486" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="settings-modal.psd Asset/settings-modal/title/Assets/icon" bitmapDataHRef="M 16 1497582486.dat" frameRight="980" frameBottom="980"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/idea" itemID="59420aa4-00000049" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/idea" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/idea" bitmapDataHRef="M 16 1497500324.dat" frameRight="5100" frameBottom="2980"/>
+          <DOMBitmapItem name="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets/modal-bg.png" itemID="59434b93-00000038" sourceExternalFilepath="./LIBRARY/settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets/modal-bg.png" sourceLastImported="1497582483" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets/modal-bg.png" bitmapDataHRef="M 14 1497582483.dat" frameRight="11200" frameBottom="13520"/>
+          <DOMBitmapItem name="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets/modal-bg.png's Drop Shadow" itemID="59434b93-00000033" sourceExternalFilepath="./LIBRARY/settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets/modal-bg.png's Drop Shadow" sourceLastImported="1497582483" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/Assets/modal-bg.png's Drop Shadow" bitmapDataHRef="M 13 1497582483.dat" frameRight="14360" frameBottom="16680"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/n" itemID="594d8242-000000bd" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/n" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/n" bitmapDataHRef="M 39 1498251842.dat" frameRight="1700" frameBottom="2560"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/n_1" itemID="594d8242-000000a4" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/n_1" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/n_1" bitmapDataHRef="M 34 1498251842.dat" frameRight="1700" frameBottom="2560"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/particles" itemID="59420aa4-0000005d" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/particles" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/particles" bitmapDataHRef="M 20 1497500324.dat" frameRight="22040" frameBottom="12400"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/Assets/Physics for Kids." itemID="594d8242-00000091" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/Assets/Physics for Kids&amp;#046" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/Assets/Physics for Kids&amp;#046" bitmapDataHRef="M 31 1498251842.dat" frameRight="5920" frameBottom="2020"/>
+          <DOMBitmapItem name="menu-state.psd Asset/buttons/Play/play-icon.png" itemID="594d8242-00000078" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/buttons/Play/play-icon.png" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/buttons/Play/play-icon.png" bitmapDataHRef="M 28 1498251842.dat" frameRight="1560" frameBottom="1340"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/r" itemID="594d8242-000000ae" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/r" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/r" bitmapDataHRef="M 36 1498251842.dat" frameRight="1620" frameBottom="2820"/>
+          <DOMBitmapItem name="settings-modal.psd Asset/settings-modal/slider-on.png/Assets/slider-ball.png" itemID="59434b96-00000089" sourceExternalFilepath="./LIBRARY/settings-modal.psd Asset/settings-modal/slider-on.png/Assets/slider-ball.png" sourceLastImported="1497582486" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="settings-modal.psd Asset/settings-modal/slider-on.png/Assets/slider-ball.png" bitmapDataHRef="M 24 1497582486.dat" frameRight="1040" frameBottom="1040"/>
+          <DOMBitmapItem name="splash-screen.psd Asset/splash-bg.jpg/Assets/the" itemID="59420aa4-00000053" sourceExternalFilepath="./LIBRARY/splash-screen.psd Asset/splash-bg.jpg/Assets/the" sourceLastImported="1497500324" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="splash-screen.psd Asset/splash-bg.jpg/Assets/the" bitmapDataHRef="M 18 1497500324.dat" frameRight="2840" frameBottom="1720"/>
+          <DOMBitmapItem name="menu-state.psd Asset/logo/letters/Assets/w" itemID="594d8242-000000b8" sourceExternalFilepath="./LIBRARY/menu-state.psd Asset/logo/letters/Assets/w" sourceLastImported="1498251842" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="menu-state.psd Asset/logo/letters/Assets/w" bitmapDataHRef="M 38 1498251842.dat" frameRight="2400" frameBottom="2940"/>
+          <DOMBitmapItem name="settings-modal.psd Asset/settings-modal/Assets/X btn" itemID="59434b96-0000008e" sourceExternalFilepath="./LIBRARY/settings-modal.psd Asset/settings-modal/Assets/X btn" sourceLastImported="1497582486" allowSmoothing="true" originalCompressionType="lossless" quality="90" href="settings-modal.psd Asset/settings-modal/Assets/X btn" bitmapDataHRef="M 25 1497582486.dat" frameRight="1100" frameBottom="1060"/>
+     </media>
+     <symbols>
+          <Include href="hat.xml" loadImmediate="false" itemID="59420ad2-00000074" lastModified="1497500370"/>
+          <Include href="menu-state.xml" itemID="594d8266-000000c1" lastModified="1498364298"/>
+          <Include href="menu-state.psd Asset/bg.xml" loadImmediate="false" itemID="594d8242-00000069" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/buttons/buttons.xml" loadImmediate="false" itemID="594d8242-0000006f" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/buttons/Options/bg.xml" loadImmediate="false" itemID="594d8242-0000007e" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/buttons/Options/cog-icon.xml" loadImmediate="false" itemID="594d8242-00000083" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/buttons/Options/Options.xml" loadImmediate="false" itemID="594d8242-0000007b" lastModified="1498356222"/>
+          <Include href="menu-state.psd Asset/buttons/Options/options copy.xml" loadImmediate="false" itemID="594d8244-000000bf" lastModified="1498360709"/>
+          <Include href="menu-state.psd Asset/buttons/Play/Play.xml" loadImmediate="false" itemID="594d8242-00000072" lastModified="1498356228"/>
+          <Include href="menu-state.psd Asset/logo/letters/a.xml" loadImmediate="false" itemID="594d8242-0000009c" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/letters/a2.xml" loadImmediate="false" itemID="594d8242-000000b0" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/letters/d.xml" loadImmediate="false" itemID="594d8242-000000a6" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/letters/h.xml" loadImmediate="false" itemID="594d8242-00000097" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/letters/letters.xml" loadImmediate="false" itemID="594d8242-00000094" lastModified="1498283988"/>
+          <Include href="menu-state.psd Asset/logo/letters/n.xml" loadImmediate="false" itemID="594d8242-000000ba" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/letters/n_1.xml" loadImmediate="false" itemID="594d8242-000000a1" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/letters/r.xml" loadImmediate="false" itemID="594d8242-000000ab" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/letters/w.xml" loadImmediate="false" itemID="594d8242-000000b5" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/logo.xml" loadImmediate="false" itemID="594d8242-0000008b" lastModified="1498251842"/>
+          <Include href="menu-state.psd Asset/logo/Physics for Kids&amp;#046.xml" loadImmediate="false" itemID="594d8242-0000008e" lastModified="1498251842"/>
+          <Include href="play_caption.xml" loadImmediate="false" itemID="594e1ddb-000001e4" lastModified="1498360701"/>
+          <Include href="settings-modal.xml" itemID="59434bbb-00000090" lastModified="1498365355"/>
+          <Include href="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/modal-bg.png.xml" loadImmediate="false" itemID="59434b93-00000035" lastModified="1497582483"/>
+          <Include href="settings-modal.psd Asset/settings-modal/Assets/modal-bg.png/modal-bg.png's Drop Shadow.xml" loadImmediate="false" itemID="59434b93-00000030" lastModified="1497582483"/>
+          <Include href="settings-modal.psd Asset/settings-modal/modal-bg.png.xml" loadImmediate="false" itemID="59434b93-0000002c" lastModified="1497582483"/>
+          <Include href="settings-modal.psd Asset/settings-modal/music/music.xml" loadImmediate="false" itemID="59434b96-0000004d" lastModified="1498365382"/>
+          <Include href="settings-modal.psd Asset/settings-modal/music/quality_toggle.xml" loadImmediate="false" itemID="59434dd2-00000160" lastModified="1498365293"/>
+          <Include href="settings-modal.psd Asset/settings-modal/music/sfx.xml" loadImmediate="false" itemID="59434da0-000000f6" lastModified="1498365251"/>
+          <Include href="settings-modal.psd Asset/settings-modal/remove-ads-btn.png/bg.xml" loadImmediate="false" itemID="59434b93-0000003e" lastModified="1497582483"/>
+          <Include href="settings-modal.psd Asset/settings-modal/remove-ads-btn.png/remove-ads-btn.png.xml" loadImmediate="false" itemID="59434b93-0000003b" lastModified="1498362951"/>
+          <Include href="settings-modal.psd Asset/settings-modal/slider-on.png/bg.xml" loadImmediate="false" itemID="59434b96-0000007f" lastModified="1497582486"/>
+          <Include href="settings-modal.psd Asset/settings-modal/slider-on.png/OFF.xml" loadImmediate="false" itemID="59449f71-000000c3" lastModified="1498365032"/>
+          <Include href="settings-modal.psd Asset/settings-modal/slider-on.png/ON.xml" loadImmediate="false" itemID="59434b96-00000084" lastModified="1498365042"/>
+          <Include href="settings-modal.psd Asset/settings-modal/slider-on.png/slider-ball.png.xml" loadImmediate="false" itemID="59434b96-00000086" lastModified="1497582486"/>
+          <Include href="settings-modal.psd Asset/settings-modal/title/icon.xml" loadImmediate="false" itemID="59434b96-00000047" lastModified="1497582486"/>
+          <Include href="settings-modal.psd Asset/settings-modal/title/title.xml" loadImmediate="false" itemID="59434b96-00000044" lastModified="1498334283"/>
+          <Include href="settings-modal.psd Asset/settings-modal/X btn.xml" loadImmediate="false" itemID="59434b96-0000008b" lastModified="1498103550"/>
+          <Include href="slider_component.xml" itemID="594f15c5-00000101" lastModified="1498365037"/>
+          <Include href="splash_screen.xml" itemID="594210db-000001b6" lastModified="1498335120"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/bg.xml" loadImmediate="false" itemID="59420aa4-00000037" lastModified="1497500324"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/company.xml" loadImmediate="false" itemID="59420aa4-00000041" lastModified="1497500324"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/glasses.xml" loadImmediate="false" itemID="59420aa4-0000005f" lastModified="1497500324"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/good.xml" loadImmediate="false" itemID="59420aa4-0000004b" lastModified="1497500324"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/hat.xml" loadImmediate="false" itemID="59420aa4-00000064" lastModified="1497500324"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/idea.xml" loadImmediate="false" itemID="59420aa4-00000046" lastModified="1497500324"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/particles.xml" loadImmediate="false" itemID="59420aa4-0000005a" lastModified="1497500324"/>
+          <Include href="splash-screen.psd Asset/splash-bg.jpg/the.xml" loadImmediate="false" itemID="59420aa4-00000050" lastModified="1497500324"/>
+          <Include href="Symbol 1.xml" loadImmediate="false" itemID="59420fb1-0000018a" lastModified="1497501617"/>
+          <Include href="Symbol 2.xml" loadImmediate="false" itemID="594b3ed2-00000065" lastModified="1498103507"/>
+          <Include href="togglers.xml" loadImmediate="false" itemID="59448898-00000062" lastModified="1498365339"/>
+          <Include href="Tween 1.xml" itemIcon="1" loadImmediate="false" itemID="594e1e4d-000001f4" lastModified="1498291789"/>
+          <Include href="Tween 2.xml" itemIcon="1" loadImmediate="false" itemID="594e1e4d-000001fc" lastModified="1498291789"/>
+          <Include href="Tween 3.xml" itemIcon="1" loadImmediate="false" itemID="594e1e4d-00000204" lastModified="1498291789"/>
+          <Include href="Tween 4.xml" itemIcon="1" loadImmediate="false" itemID="594e1e4d-0000020c" lastModified="1498291789"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 3" color="#FF800A" current="true" isSelected="true" layerType="guide">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="settings-modal" selected="true" symbolType="graphic" loop="single frame">
+                                             <matrix>
+                                                  <Matrix tx="1452.2" ty="502.65"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.8" y="44.95"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#9933CC" layerType="guide">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="menu-state" symbolType="graphic" loop="loop">
+                                             <transformationPoint>
+                                                  <Point x="960" y="540"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 1" color="#4F80FF" layerType="guide">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="splash_screen" symbolType="graphic" loop="loop">
+                                             <transformationPoint>
+                                                  <Point x="960" y="540"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts/>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="1489488" publishTime="1498365047"/>
+          <PublishItem publishSize="1489488" publishTime="1498364672"/>
+          <PublishItem publishSize="1489488" publishTime="1498364388"/>
+          <PublishItem publishSize="1489491" publishTime="1498364331"/>
+          <PublishItem publishSize="1489490" publishTime="1498363901"/>
+          <PublishItem publishSize="1489491" publishTime="1498363620"/>
+          <PublishItem publishSize="1489489" publishTime="1498363510"/>
+          <PublishItem publishSize="1510325" publishTime="1498362543"/>
+          <PublishItem publishSize="1509013" publishTime="1498362280"/>
+          <PublishItem publishSize="1509014" publishTime="1498361292"/>
+          <PublishItem publishSize="1508171" publishTime="1498361168"/>
+          <PublishItem publishSize="1530921" publishTime="1498360998"/>
+          <PublishItem publishSize="1508167" publishTime="1498360720"/>
+          <PublishItem publishSize="1508167" publishTime="1498360614"/>
+          <PublishItem publishSize="1508215" publishTime="1498360208"/>
+          <PublishItem publishSize="1508198" publishTime="1498360101"/>
+          <PublishItem publishSize="1508165" publishTime="1498359960"/>
+          <PublishItem publishSize="1508162" publishTime="1498359906"/>
+          <PublishItem publishSize="1508165" publishTime="1498359845"/>
+          <PublishItem publishSize="1508165" publishTime="1498359243"/>
+     </publishHistory>
+</DOMDocument>

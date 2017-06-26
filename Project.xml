@@ -1,106 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<!-- _________________________ Application Settings _________________________ -->
-	<app title="HanDrawn" file="HanDrawn" main="Main" version="0.0.1" company="TheGoodIdeaCo" />
-	<meta title="HanDrawn" package="com.goodideaco.handrawn" version="0.0.1" company="TheGoodIdeaCo" />
-	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
-		 or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
-	<!--<app preloader="flixel.system.FlxPreloader" />-->
-	<!--Minimum without FLX_NO_GAMEPAD: 11.8, without FLX_NO_NATIVE_CURSOR: 11.2-->
-	<set name="SWF_VERSION" value="11.8" />
-	<!-- ____________________________ Window Settings ___________________________ -->
-	<!--These window settings apply to all targets-->
-	<window width="1152" height="648" fps="60" background="#2C2C2C" hardware="true" vsync="true" antialiasing="0" />
-	<!--HTML5-specific-->
-	<window if="html5" resizable="false" />
-	<!--Desktop-specific-->
-	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
-	<!--Mobile-specific-->
-	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" />
-	
-	
-	
-	
-	<!-- _____________________________ Path Settings ____________________________ -->
-	<set name="BUILD_DIR" value="export" />
-	<classpath name="source" />
-	<assets path="assets" />
-	<assets type="font" path="assets/fonts/fredokaone.ttf" id="default" />
-	<library path="assets/data/library.swf" preload="true" />
-	
-	<!--Assets from photoshop graphics-->
-	<assets path="resources" rename="assets/images" include="*.png|*.jpg" />
-	
-	
-	
-	
-	
-	<!-- _______________________________ Libraries ______________________________ -->
-	<haxelib name="flixel" />
-	<!--In case you want to use the addons package-->
-	<haxelib name="flixel-addons" />
-	<!--In case you want to use the ui package-->
-	<!--<haxelib name="flixel-ui" />-->
-	<!--In case you want to use nape with flixel-->
-	<haxelib name="nape" />
-	<haxelib name="swf" />
-	<haxelib name="tjson" />
 
-	
+    <!-- Easy Debug Switch -->
+    <set name="should-embed" value="false" if="debug"/>
+    <set name="should-embed" value="true" unless="debug"/>
 
-	<!-- ______________________________ Haxedefines _____________________________ -->
-	<!--Enable the Flixel core recording system-->
-	<!--<haxedef name="FLX_RECORD" />-->
-	<!--Disable the right and middle mouse buttons-->
-	<!--<haxedef name="FLX_NO_MOUSE_ADVANCED" />-->
-	<!--Disable the native cursor API on Flash-->
-	<!--<haxedef name="FLX_NO_NATIVE_CURSOR" />-->
-	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
-	<!--<haxedef name="FLX_NO_MOUSE" if="mobile" />-->
-	<!--<haxedef name="FLX_NO_KEYBOARD" if="mobile" />-->
-	<haxedef name="FLX_NO_TOUCH" if="desktop" />
-	<!--<haxedef name="FLX_NO_GAMEPAD" />-->
-	<!--Disable the Flixel core sound tray-->
-	<haxedef name="FLX_NO_SOUND_TRAY" />
-	<!--Disable the Flixel sound management code-->
-	<!--<haxedef name="FLX_NO_SOUND_SYSTEM" />-->
-	<!--Disable the Flixel core focus lost screen-->
-	<haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
-	<!--Disable the Flixel core debugger. Automatically gets set whenever you compile in release mode!-->
-	<haxedef name="FLX_NO_DEBUG" unless="debug" />
-	<!--Enable this for Nape release builds for a serious peformance improvement-->
-	<haxedef name="NAPE_RELEASE_BUILD" />
-	<!-- _________________________________ Custom _______________________________ -->
-	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
+    <!-- _________________________ Application Settings _________________________ -->
+    <app title="HanDrawn" file="HanDrawn" main="Main" version="0.0.1" company="TheGoodIdeaCo"/>
+    <meta title="HanDrawn" package="com.goodideaco.handrawn" version="0.0.1" company="TheGoodIdeaCo"/>
+    <!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
+         or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
+    <!--<app preloader="flixel.system.FlxPreloader" />-->
+    <!--Minimum without FLX_NO_GAMEPAD: 11.8, without FLX_NO_NATIVE_CURSOR: 11.2-->
+    <set name="SWF_VERSION" value="11.8"/>
+
+    <!-- ____________________________ Window Settings ___________________________ -->
+    <!--These window settings apply to all targets-->
+    <window width="1152" height="800" fps="60" background="#000000" hardware="true" vsync="true" antialiasing="0"/>
+    <!--HTML5-specific-->
+    <window if="html5" resizable="false"/>
+    <!--Desktop-specific-->
+    <window if="desktop" orientation="landscape" fullscreen="false" resizable="true"/>
+    <!--Mobile-specific-->
+    <window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0"/>
 
 
+    <!-- _____________________________ Path Settings ____________________________ -->
+    <set name="BUILD_DIR" value="export"/>
+    <classpath name="source"/>
 
-	<haxedef name="DRAW_DEBUG" if="debug" />
+    <!-- Data -->
+    <assets path="assets/data" embed="${should-embed}"/>
 
+    <!-- Graphics and Artwork-->
+    <assets path="assets/images" type="image" exclude="icon.png"/>
+    <assets path="resources/artwork" rename="assets/images" include="*.png|*.jpg" embed="false"/>
 
-	<section if="telemetry" unless="USING_VS_DEBUGGER">
-		<haxelib name="hxtelemetry" />
-		<haxedef name="HXCPP_STACK_TRACE" />
-		<haxedef name="HXCPP_TELEMETRY" />
-		<!--<config:hxtelemetry host="192.168.1.160" allocations="true" if="android" />-->
-	</section>
-	<section if="USING_VS_DEBUGGER" unless="telemetry">
-		<haxelib name="hxcpp-debugger" />
-		<haxedef name="HXCPP_DEBUGGER" />
-		<haxedef name="HXCPP_STACK_TRACE" />
-	</section>
-
-
-
-	<section if="android">
-		<config:android target-sdk-version="19" />
-		<template path="libs/AndroidManifest.xml" rename="AndroidManifest.xml" />
-		<haxelib name="extension-admob" />
-	</section>
-
-	<icon path="assets/images/icon.png" />
+    <!-- Library for all non-flixel UI-->
+    <library path="resources/animations/library.swf" rename="assets/data/library.swf" preload="true" embed="true"/>
+    <!-- Animation Data -->
+    <assets path="resources/animations" rename="assets/data/animations" include="*.xml" embed="${should-embed}"/>
 
 
-	<!--Dead Code-->
-	<haxeflag name="-dce" value="std" />
+    <!-- Fonts -->
+    <assets path="assets/fonts" type="font" include="*.ttf" embed="false">
+        <assets path="fredokaone.ttf" id="default"/>
+    </assets>
+
+
+    <!-- Audio -->
+    <assets path="assets/music" type="music" include="*.ogg" embed="false"/>
+    <assets path="assets/sounds" type="sound" include="*.ogg" embed="false"/>
+    <assets path="resources/audio" rename="assets/sounds" type="sound" include="*.ogg" embed="${should-embed}"/>
+
+    <!--Assets for Admob, embed for security-->
+    <assets path="resources/marketing/secure" rename="assets/data/secure" type="text" embed="${should-embed}"/>
+
+
+    <!-- _______________________________ Libraries ______________________________ -->
+    <haxelib name="actuate"/>
+    <haxelib name="flixel"/>
+    <haxelib name="flixel-addons"/>
+    <haxelib name="nape"/>
+    <haxelib name="swf"/>
+    <haxelib name="tjson"/>
+    <!--<haxelib name="htmlParser"/>-->
+
+
+    <!-- ______________________________ Haxedefines _____________________________ -->
+    <haxedef name="FLX_NO_TOUCH" if="desktop"/>
+    <haxedef name="FLX_NO_GAMEPAD"/>
+    <haxedef name="FLX_NO_SOUND_TRAY"/>
+    <haxedef name="FLX_NO_FOCUS_LOST_SCREEN"/>
+    <haxedef name="FLX_NO_DEBUG" unless="debug"/>
+    <haxedef name="NAPE_RELEASE_BUILD"/>
+
+
+    <!-- _________________________________ Custom _______________________________ -->
+    <!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
+    <!--Program Icon -->
+    <icon path="assets/images/icon.png"/>
+
+
+    <!-- HXCPP Debugging & Telemetry -->
+    <section if="telemetry" unless="USING_VS_DEBUGGER">
+        <haxelib name="hxtelemetry"/>
+        <haxedef name="HXCPP_STACK_TRACE"/>
+        <haxedef name="HXCPP_TELEMETRY"/>
+
+        <!-- No Debugging on android, disable for now-->
+        <!--<config:hxtelemetry host="192.168.1.160" allocations="true" if="android" />-->
+    </section>
+    <section if="USING_VS_DEBUGGER" unless="telemetry">
+        <haxelib name="hxcpp-debugger"/>
+        <haxedef name="HXCPP_DEBUGGER"/>
+        <haxedef name="HXCPP_STACK_TRACE"/>
+    </section>
+
+
+    <!-- Android Settings -->
+    <section if="android">
+
+        <template path="libs/AndroidManifest.xml" rename="AndroidManifest.xml"/>
+
+        <!--Extensions-->
+        <haxelib name="extension-admob"/>
+        <haxelib name="extension-wake-lock"/>
+
+        <config:android target-sdk-version="19"/>
+
+        <!--Permissions-->
+        <!-- These currently don't work with the template -->
+        <config:android permission="android.permission.WAKE_LOCK"/>
+        <config:android permission="android.permission.INTERNET"/>
+        <config:android permission="android.permission.VIBRATE"/>
+        <config:android permission="android.permission.ACCESS_NETWORK_STATE"/>
+
+        <!--IAP-->
+        <config:android permission="com.android.vending.BILLING"/>
+
+
+
+
+        <!-- certificates -->
+        <certificate path="libs/handrawn_certificate.keystore" alias="main_release" if="release"/>
+
+    </section>
+
+
+    <!--Dead Code-->
+    <!--Im wondering if this is causing the random build errors-->
+    <!--<haxeflag name="-dce" value="std"/>-->
+
+    <!-- No traces if release -->
+    <haxeflag name="--no-traces" if="android" unless="debug" />
+
 </project>

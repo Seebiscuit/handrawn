@@ -15,7 +15,7 @@ import system.Settings;
  */
 class AutoNapeSprite extends FlxNapeSprite {
 
-	public function new(X:Float = 0.0, Y:Float = 0.0, SimpleGraphic:FlxGraphicAsset, Granularity:Int = 8, EnablePhysics:Bool = true, Kinematic:Bool=false) {
+	public function new(X:Float = 0.0, Y:Float = 0.0, SimpleGraphic:FlxGraphicAsset, Granularity:Int = 8, EnablePhysics:Bool = true, Static:Bool = false) {
 		
 		super(X, Y, SimpleGraphic, false, EnablePhysics);
 		
@@ -25,8 +25,8 @@ class AutoNapeSprite extends FlxNapeSprite {
 		x += o.x;
 		y += o.y;
 		
-		if (Kinematic){
-			b.type = BodyType.KINEMATIC;
+		if (Static) {
+			b.type = BodyType.STATIC;
 		}
 		
 		
@@ -46,6 +46,8 @@ class AutoNapeSprite extends FlxNapeSprite {
 		if (body != null) {
 			body.space = null;
 		}
+
+		body = null;
 	}
 	
 	override public function destroy():Void {

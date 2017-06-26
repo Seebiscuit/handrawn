@@ -5,6 +5,11 @@ import com.goodidea.util.NapeUtil;
 import flixel.system.debug.FlxDebugger.FlxDebuggerLayout;
 #end
 
+#if android
+import extension.wakeLock.WakeLock;
+#end
+
+import com.goodidea.util.helpers.DragThrowController;
 import display.AutoNapeSprite;
 import display.CircleNapeSprite;
 import display.HUD;
@@ -13,18 +18,17 @@ import flash.display.Graphics;
 import flash.display.Sprite;
 import flash.events.MouseEvent;
 import flash.text.TextFormat;
+import flixel.addons.nape.FlxNapeSpace;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
-import flixel.addons.nape.FlxNapeSpace;
+import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxSpriteUtil;
-import helpers.DragThrowController;
 import nape.geom.Vec2;
 import nape.phys.Body;
 import nape.phys.BodyType;
-import openfl.Lib;
 import openfl.display.CapsStyle;
 import openfl.display.FPS;
 import openfl.display.JointStyle;
@@ -32,29 +36,33 @@ import openfl.display.LineScaleMode;
 import openfl.display.StageQuality;
 import openfl.geom.Point;
 import openfl.geom.Rectangle;
+import openfl.Lib;
+import system.Audio;
 import system.Settings;
 
 class MenuState extends FlxState {
 	
 
+	//TODO: move these to user settings
 	var granularity:Int = 10;
+	var thickness:Float = 30;
+	var GRAVITY_FACTOR:Float = Settings.gravity.y;
+
 	var drawing:Bool;
 	var mousePos:FlxPoint;
 	var ls:LineStyle;
 	var ds:DrawStyle;
-	var thickness:Float = 30;
 	var walls:Body;
 	
 	
 	var hud:HUD;
-	
-	var GRAVITY_FACTOR:Float = Settings.gravity.y;
 	
 	
 	var bgSpr:FlxSprite;
 	var g:Graphics;
 	var fps:openfl.display.FPS;
 	var drawSpr:Sprite;
+	var dragThrowController:DragThrowController;
 	public var drawSprite:FlxSprite;
 	
 	
@@ -85,11 +93,11 @@ class MenuState extends FlxState {
 		FlxNapeSpace.space.gravity.set(Settings.gravity);
 		Settings.space = FlxNapeSpace.space;
 		
-		Settings.interationAmount = 5;
+		Settings.interationAmount = 25;
 		trace(FlxNapeSpace.positionIterations + " - " + FlxNapeSpace.velocityIterations);
 		
-		
-		add(new DragThrowController(FlxNapeSpace.space, null, false));
+		dragThrowController = new DragThrowController(FlxNapeSpace.space, null, false);
+		add(dragThrowController);
 		
 		add(drawSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.TRANSPARENT));
 		
@@ -116,15 +124,18 @@ class MenuState extends FlxState {
 		FlxG.console.autoPause = false;
 		
 		FlxG.console.registerClass(NapeUtil);
-		
+		FlxG.console.registerObject('controller', dragThrowController);
 		
 		FlxG.watch.add(this, 'granularity', 'granular');
 		FlxG.console.registerObject("cam", camera);
 		FlxG.console.registerClass(FlxNapeSpace);
 		
 		#end
-		
+
 	}
+
+
+
 
 	override public function update(elapsed:Float):Void {
 		
@@ -139,33 +150,21 @@ class MenuState extends FlxState {
 			FlxNapeSpace.space.gravity.setxy(FlxG.accelerometer.y * GRAVITY_FACTOR, FlxG.accelerometer.x * GRAVITY_FACTOR);
 		}
 		#end
-		
-		
-		#if FLX_KEYBOARD
-		/**
-		 * Remove all objects if F5 is pressed
-		 */
-		if (FlxG.keys.justReleased.F5) {
-			clearAdded();
-		}
-		#end
-		
-		#if !FLX_NO_TOUCH
-		if (FlxG.touches.list.length > 3) clearAdded();
-		#end
 
 		/**
 		 * ONLY WHEN RAIN BRUSH IS OFF
 		 * When pressed, initiate draw
 		 */
-		if (FlxG.mouse.justPressed && !hud.rainButton.on  && FlxG.mouse.y > 150) {
-			
+		if (FlxG.mouse.justPressed && !hud.rainButton.on) {
+			Audio.draw.looped = true;
+			Audio.draw.volume = 0;
+			Audio.draw.play(true);
 			
 			///if there are no bodies under the mouse, then init draw. otherwise init object drag and throw
-			if (FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).filter(function(b:Body) return b.type != BodyType.KINEMATIC).length == 0) {
+			if (FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).filter(function(b:Body) return b.type != BodyType.STATIC).length == 0) {
 				//Settings.togglePhysics();
 				drawing = true;
-			
+
 				
 				FlxG.stage.quality = StageQuality.LOW;
 				FlxG.camera.antialiasing = false;
@@ -192,8 +191,20 @@ class MenuState extends FlxState {
 		/**
 		 * for rain
 		 */
-		if (FlxG.mouse.pressed && hud.rainButton.on && FlxG.mouse.y > 150 ){
+		if (FlxG.mouse.pressed && hud.rainButton.on && !dragThrowController.hand.active && FlxNapeSpace.space.bodiesUnderPoint(Vec2.weak(FlxG.mouse.x, FlxG.mouse.y)).length == 0) {
+			if (!Audio.blip.playing) {
+				Audio.blip.looped = true;
+				Audio.blip.play(true);
+			}
+			
 			add(new CircleNapeSprite(FlxG.mouse.x, FlxG.mouse.y));
+		}
+		
+		/**
+		 * When rain is done
+		 */
+		if (FlxG.mouse.justReleased && hud.rainButton.on) {
+			Audio.blip.stop();
 		}
 		
 		
@@ -207,6 +218,13 @@ class MenuState extends FlxState {
 	private function stage_mouseMove(e:MouseEvent):Void {
 		g.lineTo(mousePos.x, mousePos.y);
 		g.moveTo(mousePos.x, mousePos.y);
+		
+		
+		/**
+		 * Distance between to use for controlling draw sound volume
+		 */
+		var distance:Float = Vec2.distance(Vec2.weak(mousePos.x, mousePos.y), Vec2.weak(drawSpr.mouseX, drawSpr.mouseY));
+		Audio.draw.volume = FlxMath.bound(distance / (drawSpr.width / 2), 0, 1);
 		
 		FlxSpriteUtil.updateSpriteGraphic(drawSprite, {
 			smoothing: false
@@ -226,6 +244,8 @@ class MenuState extends FlxState {
 		Lib.current.stage.removeEventListener(MouseEvent.MOUSE_MOVE, stage_mouseMove);
 		Lib.current.stage.removeEventListener(MouseEvent.MOUSE_UP, stage_mouseUp);
 		drawing = false;
+		
+		Audio.draw.stop();
 
 		FlxG.stage.quality = StageQuality.BEST;
 		FlxG.camera.antialiasing = true;
@@ -265,7 +285,7 @@ class MenuState extends FlxState {
 		add(spr);
 	}
 	
-	public function clearAdded():Void {
+	public inline function clearAdded():Void {
 		forEachOfType(AutoNapeSprite, function(s:AutoNapeSprite) s.destroy());
 	}
 	
@@ -286,6 +306,4 @@ class MenuState extends FlxState {
 		drawSpr.scaleY = FlxG.scaleMode.scale.y;
 		
 	}
-
-	
 }
